@@ -28,8 +28,12 @@
         width: 100vw;
         height: 100vh;
         background:aquamarine;
-        clip-path: circle(40vmin at 10% 30vw);
+        clip-path: circle(40% at 10% 30%);
         z-index: -1;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { background-color: #eee; } 
+        #💅{ background-color: #ddd; }
       }
     </style>
 
@@ -41,16 +45,18 @@
       <div class="row pt-5 pb-5">
         <div class="col-md-8">
           <h1 class="display-1">Remote<br/>Hack</h1>
+
+          <p class="lead">A <strong>free</strong>, remote-only hack day on the <strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. 
+          </p>
+
         </div>
       </div>
 
       <div class="row pt-5">
         <div class="col-md-8">
-          <h2>What is it?</h2>
-          <p>RemoTe Hack is a <strong>free</strong>, remote-only hack day on the <strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. 
-          </p>
+          
 
-          <h2>Why are we doing this?</h2>
+          <h2>Why?</h2>
           <p>Remote Hack helps developers and technologists get together to create solutions to remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for remote hacking.</p>
           <p>As social distancing sets in and many of us switch to full-time remote, this event is a chance to hack on things that make remote a little easier.</p>
           <p>TODO: theme of remote</p>
