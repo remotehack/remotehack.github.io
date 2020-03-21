@@ -23,27 +23,40 @@
       h1 {
         color: #ffa600;
         opacity: 0.8;
-        mix-blend-mode: difference;
+        /* mix-blend-mode: difference; */
       }
-      #💅 {
-        position: absolute;
-        width: 50vmax;
-        height: 50vmax;
+      .💅 {
+        position: fixed;
+        width: 150vmax;
+        height: 150vmax;
         background:aquamarine;
         border-radius: 100%;
         z-index: -1;
-        transform: translate(-7vw, -8vh);
+        transform: translate(-40%, -40%) scale(0.3);
+        transition: transform 10s;
       }
-      @media (prefers-color-scheme: dark) {
+
+      @media (prefers-reduced-motion: no-preference) {
+        .👇 .💅 {
+          transform: translate(50%, 20%) scale(2);
+        }
+      }
+      
+      @media (prefers-color-scheme: darkxw) {
         body { background-color: #eee; } 
         #💅{ background-color: #ddd; }
       }
     </style>
+    <script>
+      document.addEventListener('scroll', () => {
+        document.body.classList.toggle('👇', window.scrollY > 150)
+      })
+    </script>
 
     <title>Remote Hack 2020</title>
   </head>
   <body>
-    <div id="💅"></div>
+    <div class="💅"></div>
     <div class="container">
       <div class="row pt-5 pb-5">
         <div class="col-md-8">
