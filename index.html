@@ -12,11 +12,13 @@
 
     <style>
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', monospace;
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Space Mono', monospace;
-        padding-top: .5em
+        font-family: 'Space Mono', serif;
+        padding-top: .5em;
+        font-weight: 700;
+        font-style: italic;
       }
       h1 {
         color: #ffa600;
@@ -25,11 +27,12 @@
       }
       #💅 {
         position: absolute;
-        width: 100vw;
-        height: 100vh;
+        width: 50vmax;
+        height: 50vmax;
         background:aquamarine;
-        clip-path: circle(40% at 10% 30%);
+        border-radius: 100%;
         z-index: -1;
+        transform: translate(-7vw, -8vh);
       }
       @media (prefers-color-scheme: dark) {
         body { background-color: #eee; } 
@@ -55,8 +58,11 @@
         <div class="col-md-8">
 
           <h2>When?</h2>
-          <p><strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. 
-          
+          <p><strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. </p>
+
+          <h2>Where?</h2>
+          <p>We'll meet on Slack [TODO: set up slack].<p>
+          <p>Zoom</p>
 
           <h2>What?</h2>
           <p>Remote Hack helps developers and technologists get together to create solutions to remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for remote hacking.</p>
