@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,6 +27,11 @@
         opacity: 0.8;
         /* mix-blend-mode: difference; */
       }
+
+      .img-small {
+        max-width: 100px;
+      }
+
       .💅 {
         position: fixed;
         width: 150vmax;
@@ -53,6 +60,8 @@
       })
     </script>
 
+    <link href="vendor/fontawesome-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+
     <title>Remote Hack 2020</title>
   </head>
   <body>
@@ -61,26 +70,20 @@
       <div class="row pt-5 pb-5">
         <div class="col-md-8">
           <h1 class="display-1">Remote<br/>Hack</h1>
-
           <p class="lead">A <strong>free</strong>, fully-remote hack day.</p>
-          
         </div>
       </div>
 
       <div class="row pt-5">
         <div class="col-md-8">
+          <h2>What is it?</h2>
+          <p>Remote Hack is a <strong>free</strong>, Remote-only hack day on the <strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. 
+          </p>
 
-          <h2>When?</h2>
-          <p><strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. </p>
-
-          <h2>Where?</h2>
-          <p>We'll meet on Slack [TODO: set up slack].<p>
-          <p>Zoom</p>
-
-          <h2>What?</h2>
-          <p>Remote Hack helps developers and technologists get together to create solutions to remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for remote hacking.</p>
-          <p>As social distancing sets in and many of us switch to full-time remote, this event is a chance to hack on things that make remote a little easier.</p>
-          <p>TODO: theme of remote</p>
+          <h2>Why are we doing this?</h2>
+          <p>Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for Remote hacking.</p>
+          <p>As social distancing sets in and many of us switch to full-time Remote, this event is a chance to hack on things that make Remote a little easier.</p>
+          <p>TODO: theme of Remote</p>
 
           <h2>What isn't it?</h2>
           <ul>
@@ -99,14 +102,61 @@
           <p>TODO: what do attendees need?</p>
 
           <h3 id="coc">Code of Conduct</h2>
-          <p>All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and RemoTe Hack is no different. All organisers and attendees must abide by the <a href="https://berlincodeofconduct.org">Berlin Code of Conduct</a>.</p>
+          <p>All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and Remote Hack is no different. All organisers and attendees must abide by the <a href="https://berlincodeofconduct.org">Berlin Code of Conduct</a>.</p>
 
 
           <h2>How do I sign up?</h2>
           <p>TODO: button to add yourself</p>
 
           <h2>Who's coming?</h2>
-          <p>TODO: List attendees</p>
+          <ul class="list-unstyled">
+            {% for attendee in site.data.attendees %}
+            <li>
+
+                <img
+                    src="https://www.gravatar.com/avatar/{{ attendee.email_hash }}.jpg?s=100"
+                    alt="Picture of {{ attendee.name }}"
+                    class="img-thumbnail"
+                />
+                
+                {{ attendee.name }}
+                
+                {% if attendee.github_username %}
+                  <a href="https://github.com/{{ attendee.github_username }}">
+                      <span class="sr-only">GitHub</span>
+                      <i class="fab fa-github"></i>
+                  </a>
+                {% endif %}
+                {% if attendee.twitter_username %}
+                  <a href="https://twitter.com/{{ attendee.twitter_username }}">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+
+          <h2>Who's behind this?</h2>
+          <ul class="list-unstyled">
+            <li>
+              <img src="images/BenPlusHat.jpg" alt="Ben Foxall wearing a hat" class="img-small img-thumbnail">
+              Ben Foxall
+              <a href="https://twitter.com/benjaminbenben">
+                <span class="sr-only">Ben on Twitter</span>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <img src="images/RyanAlsoWithAHat.jpg" class="img-small img-thumbnail" alt="Ryan Brooks, also wearing a hat"> 
+              Ryan Brooks
+              <a href="https://twitter.com/spikeheap">
+                <span class="sr-only">Ryan onTwitter</span>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

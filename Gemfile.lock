@@ -306,7 +306,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.4)
   github-pages
-  jekyll-feed
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
