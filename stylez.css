@@ -11,11 +11,11 @@ h1, h2, h3, h4, h5, h6 {
 header {
   display: grid;
   background: #E6E7E8;
-  margin: 4em;
+  margin: 2em;
   grid-template-columns: repeat(2, 1fr);
 }
-img {
-  width: 30vw;
+header img {
+  width: 40vw;
   margin: -1em auto;
 } 
 
@@ -62,6 +62,15 @@ main {
   max-width: 35em;
   margin: auto;
   padding: 1em;
+}
+
+figure a {
+  color: #333;
+  opacity: 0.3;
+  transition: .4s;
+}
+figure:hover a {
+  opacity: 1;
 }
 
 .lead {
@@ -131,4 +140,16 @@ a {
 
 .sr-only {
   display:none;
+}
+
+.🔗{
+  border-top: 2px solid #E6E7E8;
+  padding-top: 1em;
+  margin-top: 3em; 
+  padding: 0;
+  font-family: 'Space Mono', serif;
+}
+.🔗 li {
+  list-style: none;
+  margin: 1em 0;
 }
