@@ -1,0 +1,134 @@
+body {
+  font-family: 'Inter', monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', serif;
+  padding-top: .5em;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+header {
+  display: grid;
+  background: #E6E7E8;
+  margin: 4em;
+  grid-template-columns: repeat(2, 1fr);
+}
+img {
+  width: 30vw;
+  margin: -1em auto;
+} 
+
+.⏹ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.⭐️ {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  color: #420094;
+  border-color: #420094;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 2em;
+}
+.⭐️ .🏘{
+  animation: 7s infinite alternate slidein;
+}
+.⭐️ .💥{
+  padding-top: 1em;
+  border-left: 3px solid;
+  border-right: 3px solid;
+}
+.⭐️ .💥 > *{
+  display: block;
+  animation: 8s infinite slidein;
+}
+@keyframes slidein {
+  0% {transform: translateX(-100%) rotate(-2deg)}
+  5% {transform: translateX(0%);}
+  84% {transform: translateX(0%);}
+  95% {transform: translateX(100%) rotate(2deg)}
+  100% {transform: translateX(100%) rotate(2deg)}
+} 
+
+main {
+  max-width: 35em;
+  margin: auto;
+  padding: 1em;
+}
+
+.lead {
+  display: block;
+  margin:  0;
+  font-size: 1.5rem;
+  font-family: 'Space Mono', serif;
+}
+
+.🐙{
+  text-align: right;
+  margin: 1em;
+}
+.🐙 img {
+  height: 2em;
+  width: 2em;
+  transition: .4s;
+  padding: 1em;
+}
+.🐙 img:hover {
+  transform: scale(1.4) rotate(8deg)
+}
+
+a {
+  color: #08f;
+  text-decoration: none;
+}
+
+
+.🎩 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  gap: .5em;
+  font-family: 'Space Mono', serif;
+  padding: 0;
+}
+.🎩 li {
+  display: flex;
+  align-items: center;
+  background: #E6E7E8;
+  color: #000;
+}
+.🎩 li span {
+  flex: 1;
+  margin: 0 .5em;
+}
+.🎩 img {
+  height: 2em;
+  width: 2em;
+  display: inline-block;
+  margin: 0;
+}
+.🎩 a {
+  line-height: 0;
+}
+.📣 img {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0;
+  margin-right: .5em;
+  transition: .2s;
+}
+.📣:hover img {
+  transform: scale(1.4) rotate(4deg)
+}
+
+.sr-only {
+  display:none;
+}

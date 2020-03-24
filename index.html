@@ -3,181 +3,146 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylez.css">
 
-    <style>
-      body {
-        font-family: 'Inter', monospace;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Space Mono', serif;
-        padding-top: .5em;
-        font-weight: 700;
-        font-style: italic;
-      }
-      h1 {
-        color: #ffa600;
-        opacity: 0.8;
-        /* mix-blend-mode: difference; */
-      }
-
-      .img-small {
-        max-width: 100px;
-      }
-
-      .💅 {
-        position: fixed;
-        width: 150vmax;
-        height: 150vmax;
-        background:aquamarine;
-        border-radius: 100%;
-        z-index: -1;
-        transform: translate(-40%, -40%) scale(0.3);
-        transition: transform 10s;
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        .👇 .💅 {
-          transform: translate(50%, 20%) scale(2);
-        }
-      }
-      
-      @media (prefers-color-scheme: darkxw) {
-        body { background-color: #eee; } 
-        #💅{ background-color: #ddd; }
-      }
-    </style>
-    <script>
-      document.addEventListener('scroll', () => {
-        document.body.classList.toggle('👇', window.scrollY > 150)
-      })
-    </script>
-
-    <link href="vendor/fontawesome-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-
-    <title>Remote Hack 2020</title>
+    <title>Remote Hack</title>
   </head>
   <body>
-    <div class="💅"></div>
-    <div class="container">
-      <div class="row pt-5 pb-5">
-        <div class="col-md-8">
-          <h1 class="display-1">Remote<br/>Hack</h1>
-          <p class="lead">A <strong>free</strong>, fully-remote hack day.</p>
-        </div>
+    <p class="🐙">
+      <a href="https://github.com/remotehack">
+        <img src="./images/gh.png" alt="GitHub" />
+      </a>
+    </p>
+
+    <header>
+      <div class="⏹">
+        <h1 class="⭐️" >
+            <span class="🏘">Remote</span>
+            <span class="💥"><span>Hack</span></span>
+        </h1>
       </div>
+      <div>
+        <img src="./images/pi.jpg" />
+      </div>
+    </header>
 
-      <div class="row pt-5">
-        <div class="col-md-8">
-          <h2>What is it?</h2>
-          <p>Remote Hack is a <strong>free</strong>, Remote-only hack day on the <strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT. 
-          </p>
+    <main>
+      <p class="lead">
+        A free, fully-remote hack day.<br/>
+        
+        <strong>28th of March 2020</strong> from <strong>9:30am</strong> GMT.
+      </p>
 
-          <h2>Why are we doing this?</h2>
-          <p>Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for Remote hacking.</p>
-          <p>As social distancing sets in and many of us switch to full-time Remote, this event is a chance to hack on things that make Remote a little easier.</p>
+      <h2>Why are we doing this?</h2>
+      <p>Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for Remote hacking.</p>
+      <p>As social distancing sets in and many of us switch to full-time Remote, this event is a chance to hack on things that make Remote a little easier.</p>
 
-          <h2>What isn't it?</h2>
-          <ul>
-            <li><strong>A competition.</strong> There are no prizes, and no ceremonies. At the end of the day there will be the opportunity to show what you've been hacking on, if you'd like to.</li>
-            <li><strong>A hackathon.</strong> We'll be taking breaks, and exercising self-care.</li>
-            <li><strong>Aiming to fix the world.</strong> Things are pretty dire for a lot of people right now, and If you'd like to hack on something directly related to COVID-19 then 🙌, but you're equally welcome to build something fun, or just learn something new.</li>
-            <li><strong>About delivering polished software</strong>. This is a chance to collaboratively explore an idea, see if something <em>could</em> work, or learn something new.</li>
-          </ul>
+      <h2>What isn't it?</h2>
+      <ul>
+        <li><strong>A competition.</strong> There are no prizes, and no ceremonies. At the end of the day there will be the opportunity to show what you've been hacking on, if you'd like to.</li>
+        <li><strong>A hackathon.</strong> We'll be taking breaks, and exercising self-care.</li>
+        <li><strong>Aiming to fix the world.</strong> Things are pretty dire for a lot of people right now, and If you'd like to hack on something directly related to COVID-19 then 🙌, but you're equally welcome to build something fun, or just learn something new.</li>
+        <li><strong>About delivering polished software</strong>. This is a chance to collaboratively explore an idea, see if something <em>could</em> work, or learn something new.</li>
+      </ul>
 
-          <h2>What will we be hacking on?</h2>
-          <p>
-            The theme of the day is "remote". Add your ideas as issues to our <a href="https://github.com/remotehack/remotehack.github.io/issues">GitHub issue tracker</a> for inspiration on the day. We'll come together in the morning and split out into small groups based on what interests us.
-          </p>
-          <p>
-            We'll meet in our Slack to say hi, and be ready to kick off on Zoom at 9:30am. We encourage you to take breaks, and we'll be pausing for lunch around 12:30 (we recommend burritos 🌯 to support your local Mexican takeaway). We'll come together again around 4:30pm to share our experiences and anything we've built.
-          </p>
-          <p>
-            During the day we'll be on Zoom and Slack, and encourage you to drop in for a chat. We can also help you get set up in groups to collaborate remotely.
-          </p>
+      <h2>What will we be hacking on?</h2>
+      <p>
+        The theme of the day is "remote". Add your ideas as issues to our <a href="https://github.com/remotehack/remotehack.github.io/issues">GitHub issue tracker</a> for inspiration on the day. We'll come together in the morning and split out into small groups based on what interests us.
+      </p>
+      <p>
+        We'll meet in our Slack to say hi, and be ready to kick off on Zoom at 9:30am. We encourage you to take breaks, and we'll be pausing for lunch around 12:30 (we recommend burritos 🌯 to support your local Mexican takeaway). We'll come together again around 4:30pm to share our experiences and anything we've built.
+      </p>
+      <p>
+        During the day we'll be on Zoom and Slack, and encourage you to drop in for a chat. We can also help you get set up in groups to collaborate remotely.
+      </p>
 
-          <h2>What do I need?</h2>
-          <p>
-            As long as you have a machine to hack on and an internet connection, you're good to go. We'll be collaborating on Slack and Zoom, and there are a bunch of really good tools for ad-hoc screen-sharing and collaboration:
-          </p>
-          <ul>
-            <li>Google Hangouts (for screen-sharing and video)</li>
-            <li><a href="https://tuple.app">Tuple</a> for 1:1 pairing with shared control</li>
-          </ul>
-          <p>
-            Feel free to add to this list by <a href="https://github.com/remotehack/remotehack.github.io/edit/master/index.html">contributing to this page</a>.
-          </p>
+      <h2>What do I need?</h2>
+      <p>
+        As long as you have a machine to hack on and an internet connection, you're good to go. We'll be collaborating on Slack and Zoom, and there are a bunch of really good tools for ad-hoc screen-sharing and collaboration:
+      </p>
+      <ul>
+        <li>Google Hangouts (for screen-sharing and video)</li>
+        <li><a href="https://tuple.app">Tuple</a> for 1:1 pairing with shared control</li>
+      </ul>
+      <p>
+        Feel free to add to this list by <a href="https://github.com/remotehack/remotehack.github.io/edit/master/index.html">contributing to this page</a>.
+      </p>
 <!--
-          <p>TODO: how to collaborate remotely</p>
+      <p>TODO: how to collaborate remotely</p>
 -->
-          <h3 id="coc">Code of Conduct</h2>
-          <p>All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and Remote Hack is no different. All organisers and attendees must abide by the <a href="https://berlincodeofconduct.org">Berlin Code of Conduct</a>.</p>
+      <h3 id="coc">Code of Conduct</h2>
+      <p>All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and Remote Hack is no different. All organisers and attendees must abide by the <a href="https://berlincodeofconduct.org">Berlin Code of Conduct</a>.</p>
 
 
-          <h2>How do I sign up?</h2>
-          <ol>
-            <li>Edit <a href="https://github.com/remotehack/remotehack.github.io/blob/master/_data/attendees.yml">our attendees file</a> and add yourself.</li>
-            <li>Create a PR for the change, and once that's merged you'll be on the list</li>
-          </ol>
+      <h2>How do I sign up?</h2>
+      <ol>
+        <li>Edit <a href="https://github.com/remotehack/remotehack.github.io/blob/master/_data/attendees.yml">our attendees file</a> and add yourself.</li>
+        <li>Create a PR for the change, and once that's merged you'll be on the list</li>
+      </ol>
 
-          <h2>Who's coming?</h2>
-          <ul class="list-unstyled">
-            {% for attendee in site.data.attendees %}
-            <li>
+      <h2>Who's coming?</h2>
+      <ul class="🎩">
+        {% for attendee in site.data.attendees %}
+        <li>
+          <img
+                src="https://www.gravatar.com/avatar/{{ attendee.email_hash }}.jpg?s=100"
+                alt="Picture of {{ attendee.name }}"
+          />
 
-                <img
-                    src="https://www.gravatar.com/avatar/{{ attendee.email_hash }}.jpg?s=100"
-                    alt="Picture of {{ attendee.name }}"
-                    class="img-thumbnail"
-                />
-                
-                {{ attendee.name }}
-                
-                {% if attendee.github_username %}
-                  <a href="https://github.com/{{ attendee.github_username }}">
-                      <span class="sr-only">GitHub</span>
-                      <i class="fab fa-github"></i>
-                  </a>
-                {% endif %}
-                {% if attendee.twitter_username %}
-                  <a href="https://twitter.com/{{ attendee.twitter_username }}">
-                    <span class="sr-only">Twitter</span>
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
+          <span>{{ attendee.name }}</span>
 
-          <h2>Who's behind this?</h2>
-          <ul class="list-unstyled">
-            <li>
-              <img src="images/BenPlusHat.jpg" alt="Ben Foxall wearing a hat" class="img-small img-thumbnail">
-              Ben Foxall
-              <a href="https://twitter.com/benjaminbenben">
-                <span class="sr-only">Ben on Twitter</span>
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
+          {% if attendee.github_username %}
+          <a href="https://github.com/{{ attendee.github_username }}" class="📣">
+            <img src="./images/gh.png" />
+            <span class="sr-only">GitHub</span>
+          </a>
+          {% endif %}
 
-            <li>
-              <img src="images/RyanAlsoWithAHat.jpg" class="img-small img-thumbnail" alt="Ryan Brooks, also wearing a hat"> 
-              Ryan Brooks
-              <a href="https://twitter.com/spikeheap">
-                <span class="sr-only">Ryan onTwitter</span>
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+          {% if attendee.twitter_username %}
+          <a href="https://twitter.com/{{ attendee.twitter_username }}" class="📣">
+            <img src="./images/tw.png" />
+            <span class="sr-only">Twitter</span>
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+
+      <h2>Who's behind this?</h2>
+      <ul class="🎩">
+        <li>
+          <img src="images/BenPlusHat.jpg" alt="Ben Foxall wearing a hat">
+          <span>Ben Foxall</span>
+
+          <a href="https://github.com/benfoxall/" class="📣">
+            <img src="./images/gh.png" />
+            <span class="sr-only">Ben on GitHub</span>
+          </a>
+          <a href="https://twitter.com/benjaminbenben" class="📣">
+            <img src="./images/tw.png" />
+            <span class="sr-only">Ben on twitter</span>
+          </a>
+        </li>
+
+        <li>
+          <img src="images/RyanAlsoWithAHat.jpg" alt="Ryan Brooks, also wearing a hat"> 
+          <span>Ryan Brooks</span>
+          <a href="https://github.com/spikeheap/" class="📣">
+            <img src="./images/gh.png" />
+            <span class="sr-only">Ryan on GitHub</span>
+          </a>
+          <a href="https://twitter.com/spikeheap" class="📣">
+            <img src="./images/tw.png" />
+            <span class="sr-only">Ryan on twitter</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
   </body>
 </html>
