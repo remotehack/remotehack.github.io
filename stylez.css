@@ -67,7 +67,7 @@ main {
 figure a {
   color: #333;
   opacity: 0.3;
-  transition: .4s;
+  transition: opacity .4s;
 }
 figure:hover a {
   opacity: 1;
@@ -87,7 +87,7 @@ figure:hover a {
 .🐙 img {
   height: 2em;
   width: 2em;
-  transition: .4s;
+  transition: transform .4s;
   padding: 1em;
 }
 .🐙 img:hover {
@@ -132,7 +132,7 @@ a {
   width: 1.5em;
   margin: 0;
   margin-right: .5em;
-  transition: .2s;
+  transition: transform .2s;
 }
 .📣:hover img {
   transform: scale(1.4) rotate(4deg)
