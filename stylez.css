@@ -143,6 +143,18 @@ a {
   display:none;
 }
 
+.💞{
+  font-size: 1.5em;
+  display: block;
+  background: #E6E7E8;
+  padding: .5em;
+  font-family: 'Space Mono', serif;
+}
+.💞:hover{
+  background: #000;
+  color: #E6E7E8;;
+}
+
 .🔗{
   border-top: 2px solid #E6E7E8;
   padding-top: 1em;
