@@ -1,0 +1,17 @@
+# Remote hack March 2020!
+
+In total, we had 6 participants. The zoom meeting was convened, and the hack was joined!
+
+Projects had been listed at the [issues page](https://github.com/remotehack/remotehack.github.io/issues) of the remote hack
+GitHub repo. In all, we ended up going with three different projects.
+
+- Ben and Gabor decided to pursue [planning poker](https://github.com/remotehack/poker) and had great success with a working demo at the end of the day.
+- Ryan and Mike elected a more treacherous course, crafting a [slackbot sentiment](https://github.com/remotehack/remote-sentiment) integration for our remote hack `#general` slack channel, to analyse the sentiment of the messages and respond with either emojis or exhortations to please calm down.
+- Ed was on the trail of a project to show the previous web surfers travelling across a certain page, and made great strides in configuring Django and Redis, though ran out of runway and will (hopefully!) be demo-ing something at a later date
+- Adam went on a wild goose chase involving the Github v4 search API, trying to craft the perfect graphQL query, before realising that the endpoint required auth, and simply would not do for a single hackday. Instead, he opted to just tag a bunch of sample PR's in forked repos with `pr-review-request`, so that they could be found in an amazingly "low footprint" [web tool](https://pr-finder.netlify.com)
+
+There were numerous breaks throughout the day, with participants sharing mirth and merriment on Zoom and Slack, and all agreed we would try to hold an additional remote hack in the last saturday of April. Will it become a tradition in these times of remote-ing...?
+
+---
+
+...until then, join us for Remote Hack April 2020!!!
