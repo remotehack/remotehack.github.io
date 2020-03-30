@@ -128,9 +128,10 @@ a {
 .🎩 a {
   line-height: 0;
 }
+
 .📣 img {
-  height: 1.5em;
-  width: 1.5em;
+  height: 3em;
+  width: 3em;
   margin: 0;
   margin-right: .5em;
   transition: transform .2s;
