@@ -20,6 +20,15 @@ header img {
   margin: -1em auto;
 } 
 
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol li:before{ 
+  content:"– ";
+}
+
 .⏹ {
   display: flex;
   align-items: center;
