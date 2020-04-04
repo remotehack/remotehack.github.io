@@ -68,6 +68,12 @@ ol li:before{
   100% {transform: translateX(100%) rotate(2deg)}
 } 
 
+.📅 strong {
+  font-size: 3em;
+  display:block;
+  font-weight: inherit;
+}
+
 main {
   max-width: 35em;
   margin: auto;
