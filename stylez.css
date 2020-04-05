@@ -5,6 +5,15 @@
   --link: red;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #222;
+    --background-light: #000;
+    --foreground: #bbb;
+    --link: aquamarine
+  } 
+}
+
 body {
   font-family: 'Inter', monospace;
   background: var(--background);
