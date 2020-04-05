@@ -68,7 +68,7 @@ ol li:before{
   100% {transform: translateX(100%) rotate(2deg)}
 } 
 
-.📅 strong {
+.📅 time {
   font-size: 3em;
   display:block;
   font-weight: inherit;
