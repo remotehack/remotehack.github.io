@@ -20,6 +20,15 @@ header img {
   margin: -1em auto;
 } 
 
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol li:before{ 
+  content:"– ";
+}
+
 .⏹ {
   display: flex;
   align-items: center;
@@ -58,6 +67,12 @@ header img {
   95% {transform: translateX(100%) rotate(2deg)}
   100% {transform: translateX(100%) rotate(2deg)}
 } 
+
+.📅 time {
+  font-size: 3em;
+  display:block;
+  font-weight: inherit;
+}
 
 main {
   max-width: 35em;
