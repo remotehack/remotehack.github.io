@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   RemoTe Hack helps developers and technologists get together to create solutions to remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for remote hacking.
   As social distancing sets in and many of us switch to full-time remote, this event is a chance to hack on things that make remote a little easier.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rthack.space" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://remotehack.space" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
