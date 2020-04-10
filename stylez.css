@@ -2,7 +2,8 @@
   --background: #fff;
   --background-light: #E6E7E8;
   --foreground: #000;
-  --link: red;
+  --link: blue;
+  --filter: invert(0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
     --background-light: #171717;
     --foreground: #fff;
     --link: aquamarine;
+    --filter: invert(1);
   } 
 }
 
@@ -158,6 +160,11 @@ a {
   margin-right: .5em;
   transition: transform .2s;
 }
+
+.gh {
+  filter: var(--filter);
+}
+
 .📣:hover img {
   transform: scale(1.4) rotate(4deg)
 }
