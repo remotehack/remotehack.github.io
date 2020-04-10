@@ -194,7 +194,7 @@ a {
     display: block;
     margin: 0;
     
-    background-image: url('./images//pi-fade.jpg');
+    background-image: url('./images/pi-fade-small.jpg');
     background-size: cover;
     background-position: 50% 10%;
   }
