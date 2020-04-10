@@ -7,10 +7,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #222;
-    --background-light: #000;
-    --foreground: #bbb;
-    --link: aquamarine
+    --background: #000;
+    --background-light: #1b1b1b;
+    --foreground: #fff;
+    --link: aquamarine;
   } 
 }
 
