@@ -1,5 +1,23 @@
+:root {
+  --background: #fff;
+  --background-light: #E6E7E8;
+  --foreground: #000;
+  --link: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1d1d1d;
+    --background-light: #171717;
+    --foreground: #fff;
+    --link: aquamarine;
+  } 
+}
+
 body {
   font-family: 'Inter', monospace;
+  background: var(--background);
+  color: var(--foreground);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Mono', serif;
@@ -10,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   display: grid;
-  background: #E6E7E8;
+  background: var(--background-light);
   margin: 2em;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -42,8 +60,8 @@ ol li:before{
   flex-direction: column;
   text-align: center;
   font-size: 2rem;
-  color: #420094;
-  border-color: #420094;
+  color: var(--link);
+  border-color: var(--link);
   overflow: hidden;
   text-decoration: none;
   margin: 2em;
@@ -80,15 +98,6 @@ main {
   padding: 1em;
 }
 
-figure a {
-  color: #333;
-  opacity: 0.3;
-  transition: opacity .4s;
-}
-figure:hover a {
-  opacity: 1;
-}
-
 .lead {
   display: block;
   margin:  0;
@@ -111,7 +120,7 @@ figure:hover a {
 }
 
 a {
-  color: #061159;
+  color: var(--link);
 }
 
 
@@ -126,8 +135,7 @@ a {
 .🎩 li {
   display: flex;
   align-items: center;
-  background: #E6E7E8;
-  color: #000;
+  background: var(--background-light);
 }
 .🎩 li span {
   flex: 1;
@@ -161,13 +169,14 @@ a {
 .💞{
   font-size: 1.5em;
   display: block;
-  background: #E6E7E8;
+  background: var(--background-light);
+  color: var(--link);
   padding: .5em;
   font-family: 'Space Mono', serif;
 }
 .💞:hover{
-  background: #000;
-  color: #E6E7E8;;
+  background: var(--link);
+  color: var(--background-light);
 }
 
 .🔗{
