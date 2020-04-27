@@ -1,4 +1,4 @@
-# rthack.space
+# remotehack.space
 
 ## local development
 
