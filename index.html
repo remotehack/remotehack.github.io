@@ -14,7 +14,14 @@ end: 2020-05-30T17:30Z
 <h2>Our next hack</h2>
 
 <p class="📅">
-  <time datetime="2020-5-30">{{ page.start | date_to_long_string }}</time> from 9:30am.
+  <time datetime="{{page.start}}">
+    {{ page.start | date_to_long_string }}
+
+    <span>
+      from {{ page.start | date: "%k:%M%P %Z"  %}}
+    </span>
+
+  </time>
 </p>
 <script type="application/ld+json">
   {
