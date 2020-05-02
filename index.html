@@ -1,6 +1,9 @@
 ---
 layout: default
 show_header: true
+
+start: 2020-05-30T09:30Z
+end: 2020-05-30T17:30Z
 ---
 
 
@@ -11,7 +14,7 @@ show_header: true
 <h2>Our next hack</h2>
 
 <p class="📅">
-  <time datetime="2020-5-30">30th of May 2020</time> from 9:30am.
+  <time datetime="2020-5-30">{{ page.start | date_to_long_string }}</time> from 9:30am.
 </p>
 <script type="application/ld+json">
   {
@@ -19,8 +22,8 @@ show_header: true
     "@type": "Event",
     "name": "Remote Hack #3",
     "description": "A free, fully-remote hack day",
-    "startDate": "2020-05-30T09:30Z",
-    "endDate": "2020-05-30T16:30Z",
+    "startDate": "{{page.start}}",
+    "endDate": "{{page.end}}",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
     "location": {
