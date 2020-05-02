@@ -2,8 +2,8 @@
 layout: default
 show_header: true
 
-start: 2020-05-30T09:30Z
-end: 2020-05-30T17:30Z
+start: 2020-05-30T08:30Z
+end: 2020-05-30T16:30Z
 ---
 
 
@@ -18,7 +18,21 @@ end: 2020-05-30T17:30Z
     {{ page.start | date_to_long_string }}
 
     <span>
-      from {{ page.start | date: "%k:%M%P %Z"  %}}
+      <script>
+        document.currentScript.replaceWith(
+          document.createTextNode(
+            new Intl.DateTimeFormat('default', {
+              hour: 'numeric',
+              minute: 'numeric',
+              timeZoneName: 'long'
+            })
+              .format(new Date("{{page.start}}"))
+          )
+        )
+      </script>
+      <noscript>
+        {{ page.start | date: "%k:%M%P %Z"  %}}
+      </noscript>
     </span>
 
   </time>
