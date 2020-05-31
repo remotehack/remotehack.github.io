@@ -62,7 +62,21 @@
 
   <main>
     {{ content }}
+
+
+
+
+    {% if page.show_header %}
+    <footer>
+      <ul class="🔗">
+        <li>
+          Header image – <a href="https://back7.co/home/raspberry-pi-recovery-kit">The Raspberry Pi Recovery Kit</a>
+        </li>
+      </ul>
+    </footer>
+    {% endif %}
   </main>
+
 </body>
 
 </html>
