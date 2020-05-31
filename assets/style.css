@@ -6,7 +6,7 @@
   --filter: invert(0);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1d1d1d;
     --background-light: #171717;
@@ -14,7 +14,7 @@
     --link: aquamarine;
     --filter: invert(1);
   }
-}
+} */
 
 body {
   font-family: "Inter", monospace;
