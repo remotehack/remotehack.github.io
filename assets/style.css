@@ -112,6 +112,11 @@ ol li:before {
   font-size: 0.5em;
 }
 
+.📅 {
+  display: flex;
+  justify-content: space-between;
+}
+
 main {
   max-width: 35em;
   margin: auto;

@@ -6,37 +6,66 @@ start: 2020-06-27T08:30Z
 end: 2020-06-27T16:30Z
 ---
 
-
 <p class="lead">
-  A free, fully-remote hack day.
+  An online event where you can meet friends and work on something new
 </p>
 
-<h2>Our next hack</h2>
+<section class="📅">
 
-<p class="📅">
-  <time datetime="{{page.start}}">
-    {{ page.start | date_to_long_string }}
+  <div>
+    <h2>Next event</h2>
+    <p>
+      <time datetime="{{page.start}}">
+        {{ page.start | date_to_long_string }}
 
-    <span>
-      <script>
-        document.currentScript.replaceWith(
-          document.createTextNode(
-            new Intl.DateTimeFormat('default', {
-              hour: 'numeric',
-              minute: 'numeric',
-              timeZoneName: 'long'
-            })
-              .format(new Date("{{page.start}}"))
-          )
-        )
-      </script>
-      <noscript>
-        {{ page.start | date: "%k:%M%P %Z" }}
-      </noscript>
-    </span>
+        <span>
+          <script>
+            document.currentScript.replaceWith(
+              document.createTextNode(
+                new Intl.DateTimeFormat('default', {
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  timeZoneName: 'long'
+                })
+                  .format(new Date("{{page.start}}"))
+              )
+            )
+          </script>
+          <noscript>
+            {{ page.start | date: "%k:%M%P %Z" }}
+          </noscript>
+        </span>
 
-  </time>
+      </time>
+    </p>
+  </div>
+
+  <div>
+    <h3>Past events</h3>
+    <ol>
+      <li>
+        <a href="/hacks/03">May</a>
+      </li>
+      <li>
+        <a href="/hacks/02">April</a>
+      </li>
+      <li>
+        <a href="/hacks/01">March</a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<p>
+  <a href="https://join.slack.com/t/remote-hack/shared_invite/zt-ej7futdj-5bIwBVHY3UaP3mhNfO3ZLQ" class="💞">
+    👉 Join us on Slack
+  </a>
 </p>
+
+<p><em>By joining, you are agreeing to our Code of Conduct!</em></p>
+
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,28 +86,3 @@ end: 2020-06-27T16:30Z
     ]
   }
 </script>
-
-<h2>Previous hacks</h2>
-
-<ol>
-  <li>
-    <a href="/hacks/03">May 2020</a>
-  </li>
-  <li>
-    <a href="/hacks/02">April 2020</a>
-  </li>
-  <li>
-    <a href="/hacks/01">March 2020</a>
-  </li>
-</ol>
-
-
-<h2>How do I sign up?</h2>
-
-<p>
-  <a href="https://join.slack.com/t/remote-hack/shared_invite/zt-ej7futdj-5bIwBVHY3UaP3mhNfO3ZLQ" class="💞">
-    👉 Join the Remote Hack Slack
-  </a>
-</p>
-
-<p><em>By joining, you are agreeing to our Code of Conduct!</em></p>
