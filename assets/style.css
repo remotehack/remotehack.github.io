@@ -43,6 +43,8 @@ header img {
   width: 40vw;
   height: 40vw;
   margin: -1em auto;
+  max-height: 25em;
+  max-width: 25em;
 }
 
 ol {
@@ -100,6 +102,24 @@ ol li:before {
   100% {
     transform: translateX(100%) rotate(2deg);
   }
+}
+
+/* Global nav */
+.🗺 {
+  max-width: 35em;
+  margin: 3em auto;
+  display: flex;
+  font-family: "Space Mono", serif;
+}
+.🗺 a {
+  margin-right: 1em;
+  color: var(--link);
+  background: var(--background-light);
+  padding: 0.5em;
+}
+.🗺 a:hover {
+  color: var(--background-light);
+  background: var(--link);
 }
 
 .📅 time {
@@ -230,7 +250,7 @@ a {
     display: block;
     margin: 0;
 
-    background-image: url("./images/pi-fade-small.jpg");
+    background-image: url("/images/pi-fade-small.jpg");
     background-size: cover;
     background-position: 50% 10%;
   }
