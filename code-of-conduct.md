@@ -2,6 +2,13 @@
 layout: default
 ---
 
+For any issues/questions/queries, please contact an organiser:
+
+|             | Slack | Twitter                                                |
+| ----------- | ----- | ------------------------------------------------------ |
+| Ben Foxall  | @ben  | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
+| Ryan Brooks | @ryan | [@spikeheap](https://twitter.com/@spikeheap)           |
+
 # Code of Conduct
 
 ## Purpose
