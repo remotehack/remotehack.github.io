@@ -137,6 +137,17 @@ ol li:before {
   justify-content: space-between;
 }
 
+/* /join */
+.✅ {
+}
+.✅ > p {
+  font-size: 1.5em;
+}
+.✅ .🎉 {
+  font-size: 4em;
+  padding: 0.5em;
+}
+
 main {
   max-width: 35em;
   margin: auto;
