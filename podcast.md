@@ -8,4 +8,12 @@ We'll be recording interviews with the participants throughout the day. Follow a
 
 NOTE: being interviewed is NOT necessary to participate in the hackday.
 
-come follow along at [the RSS feed](https://remotehack.space/live/feed), or just search for "Airquotes the Podcast Airquotes" in your podcatcher.
+## Tune in
+
+Enter this feed url in your Podcast App:
+
+→ [remotehack.space/live/feed](https://remotehack.space/live/feed)
+
+Or, subscribe on Spotify:
+
+→ [AirQuotes The Podcast AirQuotes](https://open.spotify.com/show/2ppoyoTxxSv9IvRGGqLWP7?si=tuWMxyvWShO9OlcOvljgmg)
