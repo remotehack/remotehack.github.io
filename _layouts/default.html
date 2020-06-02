@@ -1,61 +1,88 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for remotehack.space" href="/live/feed/" />
-    <link rel="stylesheet" href="/stylez.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400&display=swap"
+    rel="stylesheet">
 
-    <!-- favicon images -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for remotehack.space" href="/live/feed/" />
+  <link rel="stylesheet" href="/assets/style.css">
 
-    <!-- 🥰 https://metatags.io/  -->
+  <!-- favicon images -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
 
-    <!-- Primary Meta Tags -->
-    <title>Remote Hack</title>
-    <meta name="title" content="Remote Hack">
-    <meta name="description" content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
+  <!-- 🥰 https://metatags.io/  -->
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://remotehack.space/">
-    <meta property="og:title" content="Remote Hack">
-    <meta property="og:description" content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
-    <meta property="og:image" content="/images/RH-social-landscape.jpg">
+  <!-- Primary Meta Tags -->
+  <title>Remote Hack</title>
+  <meta name="title" content="Remote Hack">
+  <meta name="description"
+    content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://remotehack.space/">
-    <meta property="twitter:title" content="Remote Hack">
-    <meta property="twitter:description" content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
-    <meta property="twitter:image" content="https://remotehack.space/images/RH-social-square.jpg">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remotehack.space/">
+  <meta property="og:title" content="Remote Hack">
+  <meta property="og:description"
+    content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
+  <meta property="og:image" content="/images/RH-social-landscape.jpg">
 
-    <title>Remote Hack</title>
-  </head>
-  <body>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://remotehack.space/">
+  <meta property="twitter:title" content="Remote Hack">
+  <meta property="twitter:description"
+    content="Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising.">
+  <meta property="twitter:image" content="https://remotehack.space/images/RH-social-square.jpg">
+
+  <title>Remote Hack</title>
+</head>
+
+<body>
+
+
+  <nav class="🗺">
+    <a href="/"> / </a>
+    <a href="/code-of-conduct"> Conduct </a>
+    <a href="/about"> About </a>
+    <a href="/podcast"> Podcast </a>
+  </nav>
+
+
+  {% if page.show_header %}
+  <header>
+    <div class="⏹">
+      <h1 class="⭐️">
+        <span class="🏘">Remote</span>
+        <span class="💥"><span>Hack</span></span>
+      </h1>
+    </div>
+    <div>
+      <img src="/images/pi-small.jpg" alt="A raspberry pi looking like an old computer" width="1197" height="1197" />
+    </div>
+  </header>
+  {% endif %}
+
+  <main>
+    {{ content }}
 
     {% if page.show_header %}
-    <header>
-      <div class="⏹">
-        <h1 class="⭐️" >
-            <span class="🏘">Remote</span>
-            <span class="💥"><span>Hack</span></span>
-        </h1>
-      </div>
-      <div>
-        <img src="./images/pi-small.jpg" alt="A raspberry pi looking like an old computer"  width="1197" height="1197" />
-      </div>
-    </header>
+    <footer>
+      <ul class="🔗">
+        <li>
+          Header image – <a href="https://back7.co/home/raspberry-pi-recovery-kit">The Raspberry Pi Recovery Kit</a>
+        </li>
+      </ul>
+    </footer>
     {% endif %}
+  </main>
 
-    <main>
-      {{ content }}
-    </main>
-  </body>
+</body>
+
 </html>
