@@ -37,14 +37,6 @@ We've started putting together a list of [remote hacking resources](https://gith
 
 All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and Remote Hack is no different. All organisers and attendees must abide by the [Berlin Code of Conduct](https://berlincodeofconduct.org).
 
-## The Podcast
-
-We'll be recording interviews with the participants throughout the day. Follow along if you like (the episodes are super short...around 2 minutes each).
-
-NOTE: being interviewed is NOT necessary to participate in the hackday.
-
-come follow along at [the RSS feed](https://remotehack.space/live/feed), or just search for "Airquotes the Podcast Airquotes" in your podcatcher.
-
 ## Who's behind this?
 
 <ul class="🎩">
