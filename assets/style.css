@@ -52,6 +52,11 @@ ol {
   padding: 0;
 }
 
+.past-events li {
+  font-size: 2.5rem;
+  margin: 0.5em;
+}
+
 ol li:before {
   content: "– ";
 }
