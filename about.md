@@ -2,13 +2,13 @@
 layout: default
 ---
 
-# A Remote Hack
-
 ## Can I attend?
 
 Yes.
 
-Even if you've never been to a hack day, or aren't interested in working on something code-based, you're absolutely welcome.
+Even if you've never been to a hack day, or aren't tech-focused, you're absolutely welcome.
+
+# How it works
 
 ## Beforehand
 
