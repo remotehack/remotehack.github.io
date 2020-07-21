@@ -2,40 +2,74 @@
 layout: default
 ---
 
-## Why are we doing this?
+# A Remote Hack
 
-Remote Hack helps developers and technologists get together to create solutions to Remote working, collaboration, and socialising. To go full-meta, we'll be hacking on tools for Remote hacking.
+## Can I attend?
 
-As social distancing sets in and many of us switch to full-time Remote, this event is a chance to hack on things that make Remote a little easier.
+Yes.
 
-## What isn't it?
+Even if you've never been to a hack day, or aren't interested in working on something code-based, you're absolutely welcome.
 
-- **A competition.** There are no prizes, and no ceremonies. At the end of the day there will be the
-  opportunity to show what you've been hacking on, if you'd like to.
-- **A hackathon.** We'll be taking breaks, and exercising self-care.
-- **Aiming to fix the world.** Things are pretty dire for a lot of people right now, and If you'd like
-  to hack on something directly related to COVID-19 then 🙌, but you're equally welcome to build something fun, or
-  just learn something new.
-- **About delivering polished software.** This is a chance to collaboratively explore an idea, see if
-  something _could_ work, or learn something new.
+## Beforehand
 
-## What will we be hacking on?
+→ Drop by [our Slack group](/join) and say hi.
 
-The theme of the day is "remote". Add your ideas as issues to our [GitHub issue tracker](https://github.com/remotehack/remotehack.github.io/issues) for inspiration on the day. We'll come together in the morning and split out into small groups based on what interests us.
+→ Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
 
-We'll meet in our Slack to say hi, and be ready to kick off on Zoom at 9:30am. We encourage you to take breaks, and we'll be pausing for lunch around 12:30 (we recommend burritos 🌯 to support your local Mexican takeaway). We'll come together again around 4:30pm to share our experiences and anything we've built.
+## 9.30am, Hello
 
-During the day we'll be on Zoom and Slack, and encourage you to drop in for a chat. We can also help you get set up in groups to collaborate remotely.
+The day starts with a Zoom call. Details of this are posted in the [#general Slack channel](/join) just before we kick off.
 
-## What do I need?
+We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
-As long as you have a machine to hack on and an internet connection, you're good to go. We'll be collaborating on Slack and Zoom, and there are a bunch of really good tools for ad-hoc screen-sharing and collaboration.
+## 10am → 12.30pm
 
-We've started putting together a list of [remote hacking resources](https://github.com/remotehack/resources). Feel free to add anything you think might be useful!
+Your time to hack - work on whatever you want.
 
-## Code of Conduct
+## 12.30pm, Lunch
 
-All conferences and events should be friendly, safe and inclusive spaces for anyone to attend, and Remote Hack is no different. All organisers and attendees must abide by the [Berlin Code of Conduct](https://berlincodeofconduct.org).
+Grab something to eat, join everyone on Zoom if you'd like.
+
+## 1pm → 4.30pm
+
+More hack time - finish of things, or do something entirely different
+
+## 4.30pm, Demos
+
+We all get back on Zoom and chat about how our day went.
+
+If you'd like to share; we'll have time to show demos of what we've worked on.
+
+---
+
+### Tools we use:
+
+<details>
+<summary>Slack</summary>
+
+<p><a href="https://slack.com">Slack</a> is a chat application.  We use it as a central place for sharing messages/links/info - you can login at any point, there's usually a few people online.</p>
+
+<p>You can use it from your web browser, or they've got <a href="https://slack.com/intl/en-ie/downloads">downloadable apps</a> if you'd prefer.</p>
+
+</details>
+
+<details>
+<summary>GitHub</summary>
+
+<p><a href="https://github.com">GitHub</a> is a tool for collaborating on software projects. We use it to discuss hack ideas.</p>
+
+<p>Don't be put off if these sound technical, we're open to all skill levels!</p>
+
+</details>
+
+<details>
+<summary>Zoom</summary>
+
+<p><a href="https://zoom.us/">Zoom</a> is a video conferencing application.</p>
+
+<p>We use this for a more face-to-face chat with everyone. (Though if you want to keep your webcam off, that's cool too).</p>
+
+</details>
 
 ## Who's behind this?
 
