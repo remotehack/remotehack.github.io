@@ -4,10 +4,10 @@ layout: default
 
 For any issues/questions/queries, please contact an organiser:
 
-|             | Slack | Twitter                                                |
-| ----------- | ----- | ------------------------------------------------------ |
-| Ben Foxall  | @ben  | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
-| Ryan Brooks | @ryan | [@spikeheap](https://twitter.com/@spikeheap)           |
+|             | Slack                                                  | Twitter                                                |
+| ----------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| Ben Foxall  | [Ben](https://remote-hack.slack.com/team/U010PB5GB4N)  | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
+| Ryan Brooks | [Ryan](https://remote-hack.slack.com/team/U010MNGLJ1K) | [@spikeheap](https://twitter.com/@spikeheap)           |
 
 # Code of Conduct
 
