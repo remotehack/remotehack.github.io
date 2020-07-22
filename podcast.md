@@ -18,4 +18,4 @@ Or, subscribe on Spotify:
 
 → [AirQuotes The Podcast AirQuotes](https://open.spotify.com/show/2ppoyoTxxSv9IvRGGqLWP7?si=tuWMxyvWShO9OlcOvljgmg)
 
-<iframe src="https://open.spotify.com/embed-podcast/show/2ppoyoTxxSv9IvRGGqLWP7" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed-podcast/show/2ppoyoTxxSv9IvRGGqLWP7" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" title="Spotify Podcast player - AirQuotes The Podcast AirQuotes"></iframe>

@@ -2,11 +2,13 @@
 layout: default
 ---
 
-## Can I attend?
+# Can I attend?
 
 Yes.
 
 Even if you've never been to a hack day, or aren't tech-focused, you're absolutely welcome.
+
+---
 
 # How it works
 
@@ -32,7 +34,7 @@ Grab something to eat, join everyone on Zoom if you'd like.
 
 ## 1pm → 4.30pm
 
-More hack time - finish of things, or do something entirely different
+More hack time - finish off things, or do something entirely different
 
 ## 4.30pm, Demos
 
