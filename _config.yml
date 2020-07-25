@@ -7,7 +7,9 @@
 title: Remote Hack
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A free, fully-remote hack day.
+  A free, fully-remote hackday that happens on the last Saturday of every month.
+  It's very informal and emphasises chill-hacks-ing over actually producing anything
+  that fully works (though if you wanna aim for that, that's cool too!)
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://remotehack.space" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
