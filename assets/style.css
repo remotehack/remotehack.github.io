@@ -114,10 +114,12 @@ ol li:before {
   max-width: 35em;
   margin: 3em auto;
   display: flex;
+  flex-wrap: wrap;
   font-family: "Space Mono", serif;
 }
 .🗺 a {
   margin-right: 1em;
+  margin-bottom: 1em;
   color: var(--link);
   background: var(--background-light);
   padding: 0.5em;
