@@ -48,3 +48,27 @@ RUN apt-get update \
 # RUN apt-get update \
 #     && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+
+
+### nokogiri issues
+# https://nokogiri.org/tutorials/installing_nokogiri.html#install-with-included-libraries-recommended
+RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
+
+
+### Emoji 🤩
+## https://github.com/jekyll/jekyll/issues/4268#issuecomment-167406574
+# Install program to configure locales
+RUN apt-get install -y locales
+RUN dpkg-reconfigure locales && \
+  locale-gen C.UTF-8 && \
+  /usr/sbin/update-locale LANG=C.UTF-8
+
+# Install needed default locale for Makefly
+RUN echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && \
+  locale-gen
+
+# Set default locale for the environment
+ENV LC_ALL C.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
