@@ -11,7 +11,7 @@
                 "kind": "test",
                 "isDefault": true
             },
-            "isBackground": true,
+            "isBackground": true
         },
         {
             "label": "Build",
@@ -20,7 +20,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         }
     ]
 }
