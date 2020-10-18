@@ -124,7 +124,8 @@ ol li:before {
   background: var(--background-light);
   padding: 0.5em;
 }
-.🗺 a:hover {
+.🗺 a:hover,
+.🗺 a.current {
   color: var(--background-light);
   background: var(--link);
 }
