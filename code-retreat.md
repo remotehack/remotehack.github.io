@@ -8,7 +8,7 @@ layout: default
 
 We'll be hosting an event as part of [Global Code Retreat 2020](https://www.coderetreat.org).
 
-Code Retreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. You'll learn about test-driven-development & pair-programming through a series of interactive tasks.
+Code Retreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. We'll focus on test-driven-development & pair-programming through a series of interactive tasks.
 
 Whatever your experience, you'll learn new skills (and have fun)!
 
