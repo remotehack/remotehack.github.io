@@ -48,9 +48,14 @@
     <a href="/"> / </a>
     <a href="/code-of-conduct"> Conduct </a>
     <a href="/about"> About </a>
-    <a href="/previous-hacks">Previous hacks</a>
+    <a href="/previous-hacks"> Previous Hacks </a>
     <a href="/podcast"> Podcast </a>
+    <a href="/code-retreat"> Code Retreat </a>
   </nav>
+
+  <script>
+    for (const a of document.querySelectorAll('.🗺 a')) if (location.href === a.href) a.classList.add('current')
+  </script>
 
 
   {% if page.show_header %}

@@ -111,7 +111,7 @@ ol li:before {
 
 /* Global nav */
 .🗺 {
-  max-width: 35em;
+  max-width: 42em;
   margin: 3em auto;
   display: flex;
   flex-wrap: wrap;
@@ -124,7 +124,8 @@ ol li:before {
   background: var(--background-light);
   padding: 0.5em;
 }
-.🗺 a:hover {
+.🗺 a:hover,
+.🗺 a.current {
   color: var(--background-light);
   background: var(--link);
 }
@@ -164,9 +165,8 @@ ol li:before {
 }
 
 main {
-  max-width: 35em;
+  max-width: 42em;
   margin: auto;
-  padding: 1em;
 }
 
 .lead {
