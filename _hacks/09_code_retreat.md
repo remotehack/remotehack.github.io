@@ -1,0 +1,18 @@
+---
+hack_number: 09
+date: 2020-10-31
+event_name: Code Retreat
+---
+### This was a Code Retreat 🥳
+
+We met up and did a few katas, pair-programming and doing test-driven-development. The day was really fun, and provoked some interesting discussions around approaches and what felt nice. We also leaned heavily in Sveta's knowledge of array streams in Java 🙌.
+
+We used Game of Life for each session:
+
+- Session 1: All together, solving Game of Life on paper & experimenting with TDD.
+- Session 2: In pairs doing TDD ping-pong. The constraint was "subversive developer". One person writes the best tests, and the other tries to write the worst code that passes those tests.
+- Session 3: In pairs doing driver/navigator ("strong style"). The constraint was to have no mutable state.
+- Session 4:In pairs doing driver/navigator, no conditionals.
+- Session 5: Mob programming with one driver. The constraint was to have no variables in any of our code (including tests).
+
+
