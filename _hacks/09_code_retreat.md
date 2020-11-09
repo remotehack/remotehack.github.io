@@ -1,6 +1,6 @@
 ---
 hack_number: 09
-date: 2020-10-31
+date: 2020-11-07
 event_name: Code Retreat
 ---
 ### This was a Code Retreat 🥳
