@@ -12,7 +12,12 @@ Here are links to write-ups of our previous hack days!
   {% assign sorted_hacks = site.hacks | sort:"date" | reverse %}
   {% for hack in sorted_hacks %}
     <li>
-      <a href="{{ hack.url }}">{{hack.date | date: '%B %Y' }}</a>
+      <a href="{{ hack.url }}">
+        {{hack.date | date: '%B %Y' }}
+        {% if hack.event_name %}
+        - {{hack.event_name}}
+        {% endif %}
+      </a>
     </li>
   {% endfor %}
 </ol>
