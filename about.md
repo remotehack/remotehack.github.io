@@ -77,6 +77,21 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 
 <ul class="🎩">
   <li>
+    <img src="images/AdamAndHat-small.jpg" alt="Adam Leskis wearing a hat">
+    <span>Adam Leskis</span>
+
+    <a href="https://github.com/lpmi-13/" class="📣" aria-label="Adam on Github">
+      <img class="gh" src="./images/gh.png" alt="" width="16" height="16" />
+      <span class="sr-only">Adam on GitHub</span>
+    </a>
+    <a href="https://twitter.com/BaronVonLeskis" class="📣" aria-label="Adam on Twitter">
+      <img src="./images/tw.png" alt="" width="16" height="16" />
+      <span class="sr-only">Adam on twitter</span>
+    </a>
+
+  </li>
+
+  <li>
     <img src="images/BenPlusHat-small.jpg" alt="Ben Foxall wearing a hat">
     <span>Ben Foxall</span>
 
