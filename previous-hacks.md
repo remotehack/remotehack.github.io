@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Previous hacks
 ---
 
 # Previous hacks

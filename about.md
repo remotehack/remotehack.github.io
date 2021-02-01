@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About
 ---
 
 # Can I attend?
