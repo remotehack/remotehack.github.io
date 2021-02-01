@@ -18,7 +18,9 @@ github_username: remotehack
 # theme: minima
 # plugins:
 #   - jekyll-feed
-
+plugins:
+  - jekyll-redirect-from
+  
 timezone: Europe/London
 
 collections:

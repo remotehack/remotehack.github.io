@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Code of Conduct
 ---
 
 For any issues/questions/queries, please contact an organiser:

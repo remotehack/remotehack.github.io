@@ -20,7 +20,7 @@
   <!-- 🥰 https://metatags.io/  -->
 
   <!-- Primary Meta Tags -->
-  <title>Remote Hack</title>
+  <title>{% if page.hack_number %}Hack {{ page.hack_number }} // {% else %}{% if page.title %}{{ page.title }} // {% endif %}{% endif %}Remote Hack </title>
   <meta name="title" content="Remote Hack">
   <meta name="description" content="{{ site.description }}">
 
