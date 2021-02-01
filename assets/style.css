@@ -130,12 +130,13 @@ ol li:before {
   background: var(--link);
 }
 
-.📅 time {
+.📅 .⏰,
+.📅 .☹️ {
   font-size: 3em;
   display: block;
   font-weight: inherit;
 }
-.📅 time > span {
+.📅 .⏰ > span {
   display: block;
   font-size: 0.5em;
 }
