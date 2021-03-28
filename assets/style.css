@@ -170,6 +170,10 @@ main {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 .lead {
   display: block;
   margin: 0;
