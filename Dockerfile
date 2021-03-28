@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:3.5
+FROM jekyll/jekyll:3.8
 
 COPY ./Gemfile /srv/jekyll
 
