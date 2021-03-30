@@ -7,7 +7,7 @@ body_class: unconf
 
 # RemoteHack Unconference
 
-## April 24th @ 9.30am → 4pm
+## 24th April, 9.30am
 
 A fun online mini conference, made by everyone.
 

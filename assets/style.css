@@ -297,7 +297,15 @@ a {
   text-decoration: none;
   line-height: 1em;
   padding: 0;
+  margin-bottom: 0;
 }
+
+.unconf h2 {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
 .unconf a {
   color: #f08;
   background: #fff;
@@ -313,7 +321,10 @@ a {
 
 .unconf-cta {
   background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 50px);
+  background-color: #fff;
   background-attachment: fixed;
+  background-size: 100%;
+  transition: all .5s;
   display: block;
   font-size: 1.5em;
   padding: .5em;
@@ -325,7 +336,9 @@ a {
   line-height: 1;
 }
 .unconf-cta:hover{
-  background-image: repeating-linear-gradient(288deg, #3bf516, #6eff0738 50px);
+  /* background-image: repeating-linear-gradient(288deg, #2701ff, #07d2ff38 50px); */
+  background-color: #fc0;
+  background-size: 105%;
 }
 .unconf-cta span {
   display: block;
