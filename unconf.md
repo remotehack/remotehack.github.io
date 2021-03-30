@@ -1,7 +1,7 @@
 ---
-# This is a one-off page
+title: RemoteHack Unconference
+description: A fun online mini conference, made by everyone.
 hide_page_links: true
-
 body_class: unconf
 ---
 
