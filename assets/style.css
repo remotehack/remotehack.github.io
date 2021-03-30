@@ -310,6 +310,10 @@ a {
   margin: 0 auto;
 }
 
+.unconf .🗺 a {
+  color: #000;
+}
+
 
 .unconf-cta {
   background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 50px);
