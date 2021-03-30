@@ -15,35 +15,49 @@ show_header: true
     {% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
 
     <h2>Next event</h2>
-      {% if next_hack %}
-      <p>
+    {% if next_hack %}
+
+    <p>
+      <a class="unconf-cta" href="unconf">
+        <span>This month only!</span>
+        Unconference
         <time class="⏰" datetime="{{start_time}}">
           {{ start_time | date_to_long_string }}
-
-          <span>
-            <script>
-              document.currentScript.replaceWith(
-                document.createTextNode(
-                  new Intl.DateTimeFormat('default', {
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    timeZoneName: 'long'
-                  })
-                    .format(new Date("{{start_time}}"))
-                )
-              )
-            </script>
-            <noscript>
-              {{ start_time | date: "%k:%M%P %Z" }}
-            </noscript>
-          </span>
-
         </time>
-      </p>
-      {% else %}
-        <p class="☹️">
-          There's nothing lined up! ☹️</p>
-      {% endif %}
+      </a>
+    </p>
+
+    <!--
+
+    <p>
+      <time class="⏰" datetime="{{start_time}}">
+        {{ start_time | date_to_long_string }}
+
+        <span>
+          <script>
+            document.currentScript.replaceWith(
+              document.createTextNode(
+                new Intl.DateTimeFormat('default', {
+                  hour: 'numeric',
+                  minute: 'numeric',
+                  timeZoneName: 'long'
+                })
+                  .format(new Date("{{start_time}}"))
+              )
+            )
+          </script>
+          <noscript>
+            {{ start_time | date: "%k:%M%P %Z" }}
+          </noscript>
+        </span>
+
+      </time>
+    </p>
+    {% else %}
+    <p class="☹️">
+      There's nothing lined up! ☹️</p>
+    {% endif %}
+    -->
   </div>
 
 </section>
