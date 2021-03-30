@@ -320,8 +320,8 @@ a {
 
 
 .unconf-cta {
-  background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 50px);
-  background-color: #fff;
+  background-image: repeating-linear-gradient(288deg, #fffa, #fff0 50px);
+  background-color: #ffeb3b62;
   background-attachment: fixed;
   background-size: 100%;
   transition: all .5s;
@@ -337,7 +337,7 @@ a {
 }
 .unconf-cta:hover{
   /* background-image: repeating-linear-gradient(288deg, #2701ff, #07d2ff38 50px); */
-  background-color: #fc0;
+  background-color: #ffeb3b;
   background-size: 105%;
 }
 .unconf-cta span {
