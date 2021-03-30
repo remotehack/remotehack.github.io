@@ -17,30 +17,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
   <link rel="manifest" href="/assets/site.webmanifest">
 
+  {% assign title = page.title | default: site.title %}
   {% assign description = page.description | default: site.description %}
   <!-- 🥰 https://metatags.io/  -->
 
   <!-- Primary Meta Tags -->
-  <title>{% if page.hack_number %}Hack {{ page.hack_number }} // {% else %}{% if page.title %}{{ page.title }} // {%
-    endif %}{% endif %}Remote Hack </title>
-  <meta name="title" content="Remote Hack">
+  <title>
+    {% if page.hack_number %}Hack // {{ page.hack_number }} // {% endif %} {{ title }}
+  </title>
+  <meta name="title" content="{{title}}">
   <meta name="description" content="{{ description }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://remotehack.space/">
-  <meta property="og:title" content="Remote Hack">
+  <meta property="og:title" content="{{title}}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="/images/RH-social-landscape.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://remotehack.space/">
-  <meta property="twitter:title" content="Remote Hack">
+  <meta property="twitter:title" content="{{title}}">
   <meta property="twitter:description" content="{{ description }}">
   <meta property="twitter:image" content="https://remotehack.space/images/RH-social-square.jpg">
-
-  <title>Remote Hack</title>
 </head>
 
 <body{% if page.body_class %} class="{{page.body_class}}" {% endif %}>
