@@ -285,3 +285,18 @@ a {
     display: none;
   }
 }
+
+.unconf {
+  background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 100px);
+  background-attachment: fixed;
+}
+.unconf h1{
+  color: #f08;
+  font-size: 4em;
+  font-weight: 800;
+  text-decoration: none;
+}
+.unconf a {
+  color: #f08;
+  background: #fff;
+}
