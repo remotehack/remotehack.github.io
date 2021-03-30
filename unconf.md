@@ -5,7 +5,7 @@ hide_page_links: true
 body_class: unconf
 ---
 
-# The RemoteHack Unconference
+# RemoteHack Unconference
 
 ## April 24th @ 9.30am → 4pm
 
