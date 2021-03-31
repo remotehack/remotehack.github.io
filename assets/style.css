@@ -289,3 +289,68 @@ a {
     display: none;
   }
 }
+
+.unconf {
+  background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 100px);
+  background-attachment: fixed;
+}
+.unconf h1{
+  color: #f08;
+  font-size: min(12vw, 4em);  
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 1em;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.unconf h2 {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+
+.unconf a {
+  color: #f08;
+  background: #fff;
+}
+.unconf .🗺 {
+  margin: 0 auto;
+}
+
+.unconf .🗺 a {
+  color: #000;
+}
+
+
+.unconf-cta {
+  background-image: repeating-linear-gradient(288deg, #fffa, #fff0 50px);
+  background-color: #ffeb3b62;
+  background-attachment: fixed;
+  background-size: 100%;
+  transition: all .5s;
+  display: block;
+  font-size: 1.5em;
+  padding: .5em;
+  border-radius: 9px;
+  font-family: "Space Mono", serif;
+  font-size: 3rem;
+  color: #f08;
+  text-decoration: none;
+  line-height: 1;
+}
+.unconf-cta:hover{
+  /* background-image: repeating-linear-gradient(288deg, #2701ff, #07d2ff38 50px); */
+  background-color: #ffeb3b;
+  background-size: 105%;
+}
+.unconf-cta span {
+  display: block;
+  font-size: 1rem;
+  margin: 0;
+  color: #000
+}
+.unconf-cta .⏰ {
+  font-size: 2rem;
+  color: #000;
+}
