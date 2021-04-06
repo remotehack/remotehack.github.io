@@ -294,9 +294,13 @@ a {
   background-image: repeating-linear-gradient(288deg, #ffeb3b, #ffc10738 100px);
   background-attachment: fixed;
 }
+.unconf main {
+  display: flex;
+  flex-direction: column;
+}
 .unconf h1{
   color: #f08;
-  font-size: min(12vw, 4em);  
+  font-size: min(12vw, 4rem);  
   font-weight: 800;
   text-decoration: none;
   line-height: 1em;
@@ -304,22 +308,72 @@ a {
   margin-bottom: 0;
 }
 
+.unconf figure img {
+  width: 100%;
+}
+.unconf figure {
+  position: relative;
+  margin: 0;
+  width: 90%
+}
+.unconf figcaption {
+  color: #fff;
+  
+  font-weight: 900;
+  font-size: 2rem;
+  top: 0;
+  position: absolute;
+  
+  width: 100%;
+  padding: 1em;
+}
+
+
 .unconf h2 {
   text-decoration: none;
   margin-top: 0;
-  margin-bottom: 3em;
+  font-size: min(10vw, 3rem);  
+  line-height: 1em;
+}
+
+.unconf .lead {
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.unconf h3 {
+  font-size: 2.5rem;
+}
+.unconf p {
+  font-size: 2rem;
 }
 
 .unconf a {
   color: #f08;
   background: #fff;
 }
-.unconf .🗺 {
+.unconf nav a {
   margin: 0 auto;
+  text-align: left;
+  padding: .5em;
 }
 
 .unconf .🗺 a {
   color: #000;
+}
+
+.unconf details {
+  margin: 3em 0;
+}
+
+.unconf summary {
+  color: #f08;
+  background: #fff;
+  padding: 1em;
+  cursor: pointer;
+  font-family: "Space Mono", serif;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 
