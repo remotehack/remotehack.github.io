@@ -46,15 +46,15 @@
 <body{% if page.body_class %} class="{{page.body_class}}" {% endif %}>
 
 
+  {% unless page.hide_nav %}
   <nav class="🗺">
     <a href="/"> / </a>
-    {% unless page.hide_page_links %}
     <a href="/code-of-conduct"> Conduct </a>
     <a href="/about"> About </a>
     <a href="/previous-hacks"> Previous Hacks </a>
     <a href="/podcast"> Podcast </a>
-    {% endunless %}
   </nav>
+  {% endunless %}
 
   <script>
     for (const a of document.querySelectorAll('.🗺 a')) if (location.href === a.href) a.classList.add('current')
