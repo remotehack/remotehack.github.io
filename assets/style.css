@@ -144,6 +144,7 @@ ol li:before {
 .📅 {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 /* /join */
@@ -246,15 +247,18 @@ a {
   display: none;
 }
 
-.💞 {
+.🖱️ {
   font-size: 1.5em;
   display: block;
-  background: var(--background-light);
-  color: var(--link);
-  padding: 0.5em;
   font-family: "Space Mono", serif;
 }
-.💞:hover {
+.🖱️ a {
+  display: block;
+  padding: 0.5em;
+  background: var(--background-light);
+  color: var(--link);
+}
+.🖱️ a:hover {
   background: var(--link);
   color: var(--background-light);
 }

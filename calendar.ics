@@ -1,0 +1,19 @@
+---
+layout: null
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:{{site.url}}
+METHOD:PUBLISH{% assign sorted_hacks = site.hacks | sort:"date" | reverse %}{% for hack in sorted_hacks limit:2 %}
+BEGIN:VEVENT
+UID:{{ hack.date | date: "%Y%m%d" }}
+ORGANIZER;CN="{{site.title}}"
+LOCATION:Everywhere
+SUMMARY: Hack {{ hack.hack_number | prepend: '0' | slice: -2, 2 }} – {{ hack.date | date: '%d %B %Y' }}
+DESCRIPTION: More info at {{site.url}}{{ hack.url }}
+CLASS:PUBLIC
+DTSTART:{{ hack.date | date: "%Y%m%d" }}T083000Z
+DTEND:{{ hack.date | date: "%Y%m%d" }}T190000Z
+DTSTAMP:{{ hack.date | date: "%Y%m%d" }}T083000Z
+END:VEVENT{% endfor %}
+END:VCALENDAR
