@@ -2,8 +2,10 @@
   --background: #fff;
   --background-light: #e6e7e8;
   --foreground: #000;
+  --foreground-light: #fff;
   --link: blue;
   --filter: invert(0);
+
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -126,7 +128,7 @@ ol li:before {
 }
 .🗺 a:hover,
 .🗺 a.current {
-  color: var(--background-light);
+  color: var(--foreground-light);
   background: var(--link);
 }
 
@@ -261,7 +263,7 @@ a {
 }
 .🖱️ a:hover {
   background: var(--link);
-  color: var(--background-light);
+  color: var(--foreground-light);
 }
 .🖱️ a::before {
   content: attr(data-emoji);
@@ -279,6 +281,31 @@ a {
   list-style: none;
   margin: 1em 0;
 }
+.✉️ {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.5rem;
+}
+.✉️ * {
+  font-family: "Space Mono", serif;
+}
+.✉️ .⌨️ { 
+  padding: .25em .5em;
+  border: 1px solid var(--foreground);
+  border-radius: 0;
+  max-width: 60%;
+  width: 20rem;
+}
+.✉️ .🤙 {
+  border: none;
+  border-radius: 0;
+  background: var(--link);
+  color: var(--foreground-light);
+  padding: .25em .5em;
+  margin-left: 1em;
+}
+
+.✉️ .❤️ { font-size: .6em; text-decoration: none;}
 
 @media (max-width: 520px) {
   .🎩 {
