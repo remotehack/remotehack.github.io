@@ -253,7 +253,8 @@ a {
   font-family: "Space Mono", serif;
 }
 .🖱️ a {
-  display: block;
+  display: flex;
+  flex-direction: row;
   padding: 0.5em;
   background: var(--background-light);
   color: var(--link);
@@ -261,6 +262,10 @@ a {
 .🖱️ a:hover {
   background: var(--link);
   color: var(--background-light);
+}
+.🖱️ a::before {
+  content: attr(data-emoji);
+  margin-right: 1em;
 }
 
 .🔗 {
