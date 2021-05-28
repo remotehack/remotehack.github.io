@@ -72,10 +72,11 @@ show_header: true
   {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "Remote Hack #3",
-    "description": "A free, fully-remote hack day",
-    "startDate": "{{page.start}}",
-    "endDate": "{{page.end}}",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description | split:"." | first }}",
+    {% if next_hack %}
+    "startDate": "{{start_time}}",
+    {% endif %}
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
     "location": {
