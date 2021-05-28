@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+$max-width: 50rem;
+
+
 :root {
   --background: #fff;
   --background-light: #e6e7e8;
@@ -32,7 +35,7 @@ body {
 	color: var(--foreground);
 }
 main {
-	max-width: 42em;
+	max-width: $max-width;
 	margin: auto;
 }
 img {
@@ -140,10 +143,10 @@ ol {
 	}
 }
 .🗺 {
-	max-width: 42em;
 	margin: 3em auto;
 	display: flex;
 	flex-wrap: wrap;
+	max-width: $max-width;
 	font-family: "Space Mono", serif;
 
 	a {
