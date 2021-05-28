@@ -23,7 +23,11 @@
 
   <!-- Primary Meta Tags -->
   <title>
-    {% if page.hack_number %}Hack // {{ page.hack_number }} // {% endif %} {{ title }}
+    {% if page.hack_number %}
+      Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
+    {% else %}
+      {{ title }}
+    {% endif %}
   </title>
   <meta name="title" content="{{title}}">
   <meta name="description" content="{{ description }}">

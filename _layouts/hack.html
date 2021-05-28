@@ -2,11 +2,47 @@
 layout: default
 ---
 
-<h1><a href="/">&larr; Remote Hack</a></h1>
 {% comment %}We use prepend and slice to pad the hack number with "0"s. This will trim the hack number to 2 characters if we go over 100 hacks{% endcomment %}
 <h2>
-  Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} 
-  – {{page.date | date: '%B %Y' }}
+  Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
 </h2>
 
-{{ content }}
+{% assign pagesize = page.content | size %}
+{% if pagesize < 2 %}
+  {%- capture content -%}
+  {% assign start_time = page.date | slice:0,10 | append:"T08:30Z" %}
+  This hack is happening on <time style="font-weight: bold;" datetime="{{start_time}}">{{ start_time| date_to_long_string }}<span>
+    <script>
+      document.currentScript.replaceWith(
+        document.createTextNode(
+          new Intl.DateTimeFormat('default', {
+            hour: 'numeric',
+            minute: 'numeric',
+            timeZoneName: 'long'
+          })
+            .format(new Date("{{start_time}}"))
+        )
+      )
+    </script>
+    <noscript>
+      {{ start_time | date: "%k:%M%P %Z" }}
+    </noscript>
+  </span>
+</time>
+
+  What do you need to do in advance?
+
+  - → Read our [Code of Conduct](/code-of-conduct).
+  - → Add [Remote Hack](/calendar.ics) to your calendar.
+  - → Drop by our [Slack group](/join) and say hi.
+  - → Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
+  - → Listen to some [Airquotes The Podcast Airquotes](https://remotehack.space/live/) recordings from our previous Remote Hacks.
+
+  We will be using Zoom for most of the chatter on the day, so make sure your camera, lighting, and microphone setup are good -- Here's a [handy guide](https://checklist.video/checklist/)
+  
+  We look forward to seeing you there!
+  {%- endcapture -%}
+  {{ content | markdownify}}
+{% else %}
+  {{ content }}
+{% endif %}

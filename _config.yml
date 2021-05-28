@@ -19,6 +19,9 @@ plugins:
   
 timezone: Europe/London
 
+# To ensure that events in the future generate their html pages
+future: true
+
 collections:
   hacks:
     output: true
