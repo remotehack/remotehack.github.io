@@ -2,6 +2,17 @@
 
 $max-width: 50rem;
 
+@mixin mobile {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin notmobile {
+  @media (min-width: 521px) {
+    @content;
+  }
+}
 
 :root {
   --background: #fff;
@@ -141,27 +152,56 @@ ol {
 			animation: 8s infinite slidein;
 		}
 	}
+.🤏 {
+  font-size: .75em;
 }
 .🗺 {
-	margin: 3em auto;
-	display: flex;
-	flex-wrap: wrap;
 	max-width: $max-width;
+	margin: 2rem auto;
 	font-family: "Space Mono", serif;
 
+  &,
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 	a {
-		margin-right: 1em;
-		margin-bottom: 1em;
+		margin: auto;
 		color: var(--link);
 		background: var(--background-light);
 		padding: 0.5em;
+    line-height: 1;
+    display: inline-block;
 
 		&:hover,
     &.current {
       color: var(--foreground-light);
       background: var(--link);
     }
+
+    @include notmobile {
+      & + a {
+        margin-left: .8rem;
+      }
+    }
 	}
+  .⬅️ {
+    justify-self: flex-start;
+  }
+  .➡️ {
+    justify-self: flex-end;
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    .➡️ {
+      margin-top: 1rem;
+    }
+  }
 }
 
 .📅 {

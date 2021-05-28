@@ -47,19 +47,20 @@
 
 
   <nav class="🗺">
-    <a href="/"> / </a>
+    {% assign this_page = page.url | split:".html" | first %}
     {% unless page.hide_page_links %}
-    <a href="/code-of-conduct"> Conduct </a>
-    <a href="/about"> About </a>
-    <a href="/previous-hacks"> Previous Hacks </a>
-    <a href="/podcast"> Podcast </a>
+      <div class="⬅️">
+        {% for item in site.menu.primary %}
+          <a href="{{ item.url }}" class="{% if item.url == this_page %}current{% endif %}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+      <div class="➡️ 🤏">
+        {% for item in site.menu.secondary %}
+          <a href="{{ item.url }}" class="{% if item.url == this_page %}current{% endif %}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
     {% endunless %}
   </nav>
-
-  <script>
-    for (const a of document.querySelectorAll('.🗺 a')) if (location.href === a.href) a.classList.add('current')
-  </script>
-
 
   {% if page.show_header %}
   <header>

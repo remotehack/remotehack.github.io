@@ -29,3 +29,24 @@ defaults:
       type: "hacks"
     values:
       layout: "hack"
+
+
+menu:
+  primary:
+    - url: /
+      title: /
+    - url: /code-of-conduct
+      title: Conduct
+    - url: /about
+      title: About
+    - url: /previous-hacks
+      title: Previous Hacks
+  secondary:
+    - url: /podcast
+      title: Podcast
+    - url: /join
+      title: Slack
+    - url: https://tinyletter.com/RemotehackSpace
+      title: Newsletter
+    - url: https://twitter.com/RemotehackSpace
+      title: Twitter
