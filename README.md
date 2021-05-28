@@ -4,7 +4,7 @@
 
 ```
 $ bundle install
-$ jekyll serve
+$ bundle exec jekyll serve --watch
 ```
 
 ## local development (docker version)
