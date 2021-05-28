@@ -24,7 +24,7 @@ $max-width: 50rem;
 }
 @keyframes slidein {
 	0% {
-		transform: translateX(-100%) rotate(-2deg);
+		transform: translateX(-200%) rotate(-2deg);
 	}
 	5% {
 		transform: translateX(0%);
@@ -33,10 +33,10 @@ $max-width: 50rem;
 		transform: translateX(0%);
 	}
 	95% {
-		transform: translateX(100%) rotate(2deg);
+		transform: translateX(200%) rotate(2deg);
 	}
 	100% {
-		transform: translateX(100%) rotate(2deg);
+		transform: translateX(200%) rotate(2deg);
 	}
 }
 
@@ -55,55 +55,64 @@ img {
 a {
 	color: var(--link);
 }
-h1 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
+
+@each $h in (h1, h2, h3, h4, h5, h6) {
+  #{$h} {
+    font-family: "Space Mono", serif;
+    padding-top: 0.5em;
+    font-weight: 400;
+    text-decoration: underline;
+  }
 }
-h2 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
-}
-h3 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
-}
-h4 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
-}
-h5 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
-}
-h6 {
-	font-family: "Space Mono", serif;
-	padding-top: 0.5em;
-	font-weight: 400;
-	text-decoration: underline;
-}
+
 header {
-	display: grid;
 	background: var(--background-light);
 	margin: 2em;
-	grid-template-columns: repeat(2, 1fr);
 
-	img {
-		width: 40vw;
-		height: 40vw;
-		margin: -1em auto;
-		max-height: 25em;
-		max-width: 25em;
-	}
+  
+  .⏹ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url(/images/pi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .⭐️ {
+    text-transform: uppercase;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--link);
+    border-color: currentColor;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 0;
+    padding: .75em 3em;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,.5);
+
+    @include mobile {
+      padding: 1em;
+      width: 100%;
+    }
+
+    .🏘 {
+      animation: 7s infinite alternate slidein;
+    }
+    .💥 {
+      border-left: 3px solid;
+      border-right: 3px solid;
+
+      span {
+        display: block;
+        animation: 8s infinite slidein;
+      }
+    }
+  }
 }
 
 ol {
@@ -122,36 +131,6 @@ ol {
     }
   }
 }
-.⏹ {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.⭐️ {
-	text-transform: uppercase;
-	display: inline-flex;
-	flex-direction: column;
-	text-align: center;
-	font-size: 2rem;
-	color: var(--link);
-	border-color: var(--link);
-	overflow: hidden;
-	text-decoration: none;
-	margin: 2em;
-
-	.🏘 {
-		animation: 7s infinite alternate slidein;
-	}
-	.💥 {
-		padding-top: 1em;
-		border-left: 3px solid;
-		border-right: 3px solid;
-
-		span {
-			display: block;
-			animation: 8s infinite slidein;
-		}
-	}
 .🤏 {
   font-size: .75em;
 }
@@ -379,20 +358,9 @@ ol {
 		text-decoration: none;
 	}
 }
-@media (max-width: 520px) {
+@include mobile {
 	.🎩 {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-	}
-	header {
-		display: block;
-		margin: 0;
-		background-image: url("/images/pi-fade-small.jpg");
-		background-size: cover;
-		background-position: 50% 10%;
-
-		img {
-			display: none;
-		}
 	}
 }
