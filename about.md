@@ -21,7 +21,7 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ## 9.30am, Hello
 
-The day starts with a Zoom call. Details of this are posted in the [#general Slack channel](/join) just before we kick off.
+The day starts with a video call in discord. Join our remotehack server at https://discord.gg/s4G2KzG3. The link will also be in the [#general Slack channel](/join).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
@@ -31,7 +31,7 @@ Your time to hack - work on whatever you want.
 
 ## 12.30pm, Lunch
 
-Grab something to eat, join everyone on Zoom if you'd like.
+Grab something to eat, join everyone on Discord if you'd like.
 
 ## 1pm → 4.30pm
 
@@ -39,7 +39,7 @@ More hack time - finish off things, or do something entirely different
 
 ## 4.30pm, Demos
 
-We all get back on Zoom and chat about how our day went.
+We all get back on Discord and chat about how our day went.
 
 If you'd like to share; we'll have time to show demos of what we've worked on.
 
@@ -66,9 +66,9 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 </details>
 
 <details>
-<summary>Zoom</summary>
+<summary>Discord</summary>
 
-<p><a href="https://zoom.us/">Zoom</a> is a video conferencing application.</p>
+<p><a href="https://discord.us/">Discord</a> is a platform for text and video communication.</p>
 
 <p>We use this for a more face-to-face chat with everyone. (Though if you want to keep your webcam off, that's cool too).</p>
 
