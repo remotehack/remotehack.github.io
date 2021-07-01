@@ -22,27 +22,33 @@
   <!-- 🥰 https://metatags.io/  -->
 
   <!-- Primary Meta Tags -->
-  <title>
+
     {% if page.hack_number %}
-      Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
+      {%- capture derivedTitle -%}
+        Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
+      {%- endcapture -%}
     {% else %}
-      {{ title }}
+      {% capture derivedTitle %}
+        {{ title }}
+      {% endcapture %}
     {% endif %}
+  <title>
+    {{ derivedTitle }}
   </title>
-  <meta name="title" content="{{title}}">
+  <meta name="title" content="{{ derivedTitle }}">
   <meta name="description" content="{{ description }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://remotehack.space/">
-  <meta property="og:title" content="{{title}}">
+  <meta property="og:title" content="{{ derivedTitle }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="/images/RH-social-landscape.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://remotehack.space/">
-  <meta property="twitter:title" content="{{title}}">
+  <meta property="twitter:title" content="{{ derivedTitle }}">
   <meta property="twitter:description" content="{{ description }}">
   <meta property="twitter:image" content="https://remotehack.space/images/RH-social-square.jpg">
 </head>
