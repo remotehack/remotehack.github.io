@@ -21,7 +21,7 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ## 9.30am, Hello
 
-The day starts with a video call in discord. Join our remotehack server at https://discord.gg/s4G2KzG3. The link will also be in the [#general Slack channel](/join).
+The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3). The link will also be in the [#general Slack channel](/join).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
