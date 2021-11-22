@@ -12,7 +12,7 @@ LOCATION:Everywhere
 SUMMARY: Hack {{ hack.hack_number | prepend: '0' | slice: -2, 2 }} – {{ hack.date | date: '%d %B %Y' }}
 DESCRIPTION: More info at {{site.url}}{{ hack.url }}
 CLASS:PUBLIC
-DTSTART:{{ hack.date | date: "%Y%m%d" }}T083000Z
+DTSTART:{{ hack.date | date: "%Y%m%d" }}T093000Z
 DTEND:{{ hack.date | date: "%Y%m%d" }}T190000Z
 DTSTAMP:{{ hack.date | date: "%Y%m%d" }}T083000Z
 END:VEVENT{% endfor %}
