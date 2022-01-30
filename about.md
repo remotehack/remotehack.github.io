@@ -15,13 +15,13 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ## Beforehand
 
-→ Drop by [our Slack group](/join) and say hi.
+→ Drop by [our Discord server](https://discord.gg/wNq8uVvQT3) and say hi.
 
 → Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
 
 ## 9.30am, Hello
 
-The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3). The link will also be in the [#general Slack channel](/join).
+The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
@@ -48,15 +48,6 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 ### Tools we use:
 
 <details>
-<summary>Slack</summary>
-
-<p><a href="https://slack.com">Slack</a> is a chat application.  We use it as a central place for sharing messages/links/info - you can login at any point, there's usually a few people online.</p>
-
-<p>You can use it from your web browser, or they've got <a href="https://slack.com/intl/en-ie/downloads">downloadable apps</a> if you'd prefer.</p>
-
-</details>
-
-<details>
 <summary>GitHub</summary>
 
 <p><a href="https://github.com">GitHub</a> is a tool for collaborating on software projects. We use it to discuss hack ideas.</p>
@@ -71,6 +62,8 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 <p><a href="https://discord.us/">Discord</a> is a platform for text and video communication.</p>
 
 <p>We use this for a more face-to-face chat with everyone. (Though if you want to keep your webcam off, that's cool too).</p>
+
+<p>You can use it from your web browser, or they've got <a href="https://discord.com/download">downloadable apps</a> if you'd prefer.</p>
 
 </details>
 
