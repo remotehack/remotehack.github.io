@@ -3,8 +3,8 @@ image: jekyll/jekyll:3.8
 tasks:
   - name: set up environment
     init: bundle install
-    command: bundle exec jekyll serve --watch
+    #command: bundle exec jekyll serve --watch
 
-ports:
-  - port: 4000
-    onOpen: open-preview
+#ports:
+#  - port: 4000
+#    onOpen: open-preview
