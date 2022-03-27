@@ -1,3 +1,5 @@
+image: jekyll/jekyll:3.8
+
 tasks:
   - name: set up environment
     init: jekyll build
