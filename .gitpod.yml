@@ -2,7 +2,8 @@ image: jekyll/jekyll:3.8
 
 tasks:
   - name: set up environment
-    command: jekyll build
+    init: jekyll build
+    command: jekyll serve
 
 ports:
   - port: 4000
