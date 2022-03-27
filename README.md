@@ -7,6 +7,10 @@ $ bundle install
 $ bundle exec jekyll serve --watch
 ```
 
+## local development (gitpod version)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/remotehack/remotehack.github.io/)
+
 ## local development (docker version)
 
 ```bash

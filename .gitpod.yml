@@ -1,0 +1,9 @@
+image: jekyll/jekyll:3.8
+
+tasks:
+  - name: set up environment
+    command: jekyll build
+
+ports:
+  - port: 4000
+    onOpen: open-preview
