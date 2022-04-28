@@ -12,7 +12,7 @@ show_header: true
   <div>
     {% assign sorted_hacks = site.hacks | where:"happened",false | sort:"date" | reverse %}
     {% assign next_hack = sorted_hacks | first %}
-    {% assign start_time = next_hack.date | slice:0,10 | append:"T09:30Z" %}
+    {% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
 
     <h2>Next event</h2>
       {% if next_hack %}
