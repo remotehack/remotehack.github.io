@@ -5,4 +5,5 @@ ports:
   - port: 4000
     onOpen: open-browser
 tasks:
+  - init: bundle install
   - command: jekyll serve -l --host=0.0.0.0
