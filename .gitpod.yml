@@ -1,9 +1,8 @@
+image:
+  file: Dockerfile.gitpod
 
-#tasks:
-#  - name: set up environment
-#    init: bundle install
-    #command: bundle exec jekyll serve --watch
-
-#ports:
-#  - port: 4000
-#    onOpen: open-preview
+ports:
+  - port: 4000
+    onOpen: open-browser
+tasks:
+  - command: jekyll serve -l --host=0.0.0.0
