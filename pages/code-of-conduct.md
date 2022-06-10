@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Code of Conduct
+permalink: /code-of-conduct/
 ---
 
 For any issues/questions/queries, please contact an organiser:
@@ -11,7 +11,7 @@ For any issues/questions/queries, please contact an organiser:
 | Ben Foxall  | [Ben](https://remote-hack.slack.com/team/U010PB5GB4N)  | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
 | Ryan Brooks | [Ryan](https://remote-hack.slack.com/team/U010MNGLJ1K) | [@spikeheap](https://twitter.com/@spikeheap)           |
 
-# Code of Conduct
+# {{ page.title }}
 
 ## Purpose
 

@@ -3,9 +3,9 @@ layout: default
 ---
 
 {% comment %}We use prepend and slice to pad the hack number with "0"s. This will trim the hack number to 2 characters if we go over 100 hacks{% endcomment %}
-<h2>
+<h1>
   Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
-</h2>
+</h1>
 
 {% assign pagesize = page.content | size %}
 {% if pagesize < 2 %}

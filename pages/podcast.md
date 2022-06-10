@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Airquotes the Podcast Airquotes
+permalink: /podcast/
 ---
-
-# The Podcast
 
 We'll be recording interviews with the participants throughout the day. Follow along if you like (the episodes are super short...around 2 minutes each).
 

@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /calendar.ics
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
