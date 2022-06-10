@@ -9,7 +9,7 @@ NOTE: being interviewed is NOT necessary to participate in the hackday.
 
 ## Take part
 
-Either be available on the day of a Remote Hack and make some sort of audible confirmation noise when somebody asks "who wants to podcast?", or alternatively asynchronously leave a voice message at any time here: [Send a voice message](https://anchor.fm/remotehack-live-messages/message)
+Be available on the day of a Remote Hack and make some sort of audible confirmation noise when somebody asks "who wants to podcast?"
 
 ## Tune in
 
