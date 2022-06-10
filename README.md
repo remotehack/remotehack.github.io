@@ -2,8 +2,9 @@
 
 ## local development
 
-Install Jekyll (or the `github-pages` gem) and then simply run:
+We're using [bundler](https://bundler.io) to make sure you get all the appropriate gems to run the site locally. 
 
 ```
-$ jekyll serve --watch
+$ bundler install
+$ bundler exec jekyll serve --watch
 ```
