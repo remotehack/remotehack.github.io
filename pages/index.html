@@ -3,17 +3,16 @@ show_header: true
 permalink: /
 ---
 
+{% assign sorted_hacks = site.hacks | where:"upcoming",true | sort:"date" | reverse %}
+{% assign next_hack = sorted_hacks | first %}
+{% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
+
 <p class="lead">
   An online event where you can meet friends and work on something new
 </p>
 
 <section class="📅">
-
   <div>
-    {% assign sorted_hacks = site.hacks | where:"happened",false | sort:"date" | reverse %}
-    {% assign next_hack = sorted_hacks | first %}
-    {% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
-
     <h2>Next event</h2>
       {% if next_hack %}
       <p>
@@ -50,7 +49,6 @@ permalink: /
   </p>
 </section>
 
-
 <p class="🖱️">
   <a href="{{ site.url }}/join" data-emoji="👉">Join us on Discord</a>
 </p>
@@ -68,7 +66,7 @@ permalink: /
     "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
     "location": {
       "@type":"VirtualLocation",
-      "url": "https://discord.gg/wNq8uVvQT3"
+      "url": "{{ site.discord_invite_url }}"
     },
     "image": [
       "https://remotehack.space/images/RH-social-square.jpg",

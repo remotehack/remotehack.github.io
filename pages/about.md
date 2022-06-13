@@ -15,13 +15,13 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ### Beforehand
 
-→ Drop by [our Discord server](https://discord.gg/wNq8uVvQT3) and say hi.
+→ Drop by [our Discord server]({{ site.discord_invite_url }}) and say hi.
 
 → Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
 
 ### 9.30am, Hello
 
-The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3).
+The day starts with a video call in discord. Join our remotehack server at [{{ site.discord_invite_url }}]({{ site.discord_invite_url }}).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
@@ -59,7 +59,7 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 <details>
 <summary>Discord</summary>
 
-<p><a href="https://discord.us/">Discord</a> is a platform for text and video communication.</p>
+<p><a href="https://discord.com">Discord</a> is a platform for text and video communication.</p>
 
 <p>We use this for a more face-to-face chat with everyone. (Though if you want to keep your webcam off, that's cool too).</p>
 
@@ -71,44 +71,44 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 
 <ul class="🎩">
   <li>
-    <img src="images/AdamAndHat-small.jpg" alt="Adam Leskis wearing a hat">
+    <img src="{{ 'images/AdamAndHat-small.jpg' | absolute_url }}" alt="Adam Leskis wearing a hat">
     <span>Adam Leskis</span>
 
     <a href="https://github.com/lpmi-13/" class="📣" aria-label="Adam on Github">
-      <img class="gh" src="./images/gh.png" alt="" width="16" height="16" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Adam on GitHub</span>
     </a>
     <a href="https://twitter.com/BaronVonLeskis" class="📣" aria-label="Adam on Twitter">
-      <img src="./images/tw.png" alt="" width="16" height="16" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Adam on twitter</span>
     </a>
 
   </li>
 
   <li>
-    <img src="images/BenPlusHat-small.jpg" alt="Ben Foxall wearing a hat">
+    <img src="{{ 'images/BenPlusHat-small.jpg' | absolute_url }}" alt="Ben Foxall wearing a hat">
     <span>Ben Foxall</span>
 
     <a href="https://github.com/benfoxall/" class="📣" aria-label="Ben on Github">
-      <img class="gh" src="./images/gh.png" alt="" width="16" height="16" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Ben on GitHub</span>
     </a>
     <a href="https://twitter.com/benjaminbenben" class="📣" aria-label="Ben on Twitter">
-      <img src="./images/tw.png" alt="" width="16" height="16" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Ben on twitter</span>
     </a>
 
   </li>
 
   <li>
-    <img src="images/RyanAlsoWithAHat-small.jpg" alt="Ryan Brooks, also wearing a hat">
+    <img src="{{ 'images/RyanAlsoWithAHat-small.jpg' | absolute_url }}" alt="Ryan Brooks, also wearing a hat">
     <span>Ryan Brooks</span>
     <a href="https://github.com/spikeheap/" class="📣" aria-label="Ryan on Github">
-      <img class="gh" src="./images/gh.png" alt="" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" />
       <span class="sr-only">Ryan on GitHub</span>
     </a>
     <a href="https://twitter.com/spikeheap" class="📣" aria-label="Ryan on Twitter">
-      <img src="./images/tw.png" alt="" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" />
       <span class="sr-only">Ryan on twitter</span>
     </a>
   </li>

@@ -8,7 +8,7 @@ This started out as an idea for just one random day, but we've since decided to 
 Here are links to write-ups of our previous hack days!
 
 <ol class="past-events">
-  {% assign sorted_hacks = site.hacks | where:"happened",true | sort:"date" | reverse %}
+  {% assign sorted_hacks = site.hacks | where:"upcoming",false | sort:"date" | reverse %}
   {% for hack in sorted_hacks %}
     <li>
       <a href="{{ hack.url }}">
