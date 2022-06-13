@@ -17,21 +17,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
   <link rel="manifest" href="/assets/site.webmanifest">
 
-  {% assign title = page.title | default: site.title %}
   {% assign description = page.description | default: site.description %}
   <!-- 🥰 https://metatags.io/  -->
 
   <!-- Primary Meta Tags -->
 
-    {% if page.hack_number %}
       {%- capture derivedTitle -%}
-        Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }}
+      {% if page.hack_number %}Hack {{page.hack_number | prepend: '0' | slice: -2, 2 }} – {{page.date | date: '%B %Y' }} |{% else %}{% if page.title %}{{ page.title }} | {% endif %}{% endif %}{{ site.title }}
       {%- endcapture -%}
-    {% else %}
-      {% capture derivedTitle %}
-        {{ title }}
-      {% endcapture %}
-    {% endif %}
   <title>
     {{ derivedTitle }}
   </title>
@@ -59,10 +52,10 @@
   <nav class="🗺">
     <a href="/"> / </a>
     {% unless page.hide_page_links %}
-    <a href="/code-of-conduct"> Conduct </a>
-    <a href="/about"> About </a>
-    <a href="/previous-hacks"> Previous Hacks </a>
-    <a href="/podcast"> Podcast </a>
+    <a href="/code-of-conduct/"> Conduct </a>
+    <a href="/about/"> About </a>
+    <a href="/previous-hacks/"> Previous Hacks </a>
+    <a href="/podcast/"> Podcast </a>
     {% endunless %}
   </nav>
 
@@ -86,6 +79,7 @@
   {% endif %}
 
   <main>
+    {% if page.title and page.show_title %}<h1>{{ page.title }}</h1>{% endif %}
     {{ content }}
 
     {% if page.show_header %}

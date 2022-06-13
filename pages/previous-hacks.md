@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Previous hacks
+permalink: /previous-hacks/
 ---
-
-# Previous hacks
 
 This started out as an idea for just one random day, but we've since decided to keep doing it on the last Saturday of every month.
 

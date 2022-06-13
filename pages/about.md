@@ -1,9 +1,9 @@
 ---
-layout: default
 title: About
+permalink: /about/
 ---
 
-# Can I attend?
+## Can I attend?
 
 Yes.
 
@@ -11,33 +11,33 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ---
 
-# How it works
+## How it works
 
-## Beforehand
+### Beforehand
 
 → Drop by [our Discord server](https://discord.gg/wNq8uVvQT3) and say hi.
 
 → Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
 
-## 9.30am, Hello
+### 9.30am, Hello
 
 The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
-## 10am → 12.30pm
+### 10am → 12.30pm
 
 Your time to hack - work on whatever you want.
 
-## 12.30pm, Lunch
+### 12.30pm, Lunch
 
 Grab something to eat, join everyone on Discord if you'd like.
 
-## 1pm → 4.30pm
+### 1pm → 4.30pm
 
 More hack time - finish off things, or do something entirely different
 
-## 4.30pm, Demos
+### 4.30pm, Demos
 
 We all get back on Discord and chat about how our day went.
 
@@ -45,7 +45,7 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 
 ---
 
-### Tools we use:
+## Tools we use:
 
 <details>
 <summary>GitHub</summary>
