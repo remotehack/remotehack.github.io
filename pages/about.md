@@ -59,7 +59,7 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 <details>
 <summary>Discord</summary>
 
-<p><a href="https://discord.us/">Discord</a> is a platform for text and video communication.</p>
+<p><a href="https://discord.com">Discord</a> is a platform for text and video communication.</p>
 
 <p>We use this for a more face-to-face chat with everyone. (Though if you want to keep your webcam off, that's cool too).</p>
 
