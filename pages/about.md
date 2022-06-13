@@ -71,44 +71,44 @@ If you'd like to share; we'll have time to show demos of what we've worked on.
 
 <ul class="🎩">
   <li>
-    <img src="images/AdamAndHat-small.jpg" alt="Adam Leskis wearing a hat">
+    <img src="{{ 'images/AdamAndHat-small.jpg' | absolute_url }}" alt="Adam Leskis wearing a hat">
     <span>Adam Leskis</span>
 
     <a href="https://github.com/lpmi-13/" class="📣" aria-label="Adam on Github">
-      <img class="gh" src="./images/gh.png" alt="" width="16" height="16" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Adam on GitHub</span>
     </a>
     <a href="https://twitter.com/BaronVonLeskis" class="📣" aria-label="Adam on Twitter">
-      <img src="./images/tw.png" alt="" width="16" height="16" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Adam on twitter</span>
     </a>
 
   </li>
 
   <li>
-    <img src="images/BenPlusHat-small.jpg" alt="Ben Foxall wearing a hat">
+    <img src="{{ 'images/BenPlusHat-small.jpg' | absolute_url }}" alt="Ben Foxall wearing a hat">
     <span>Ben Foxall</span>
 
     <a href="https://github.com/benfoxall/" class="📣" aria-label="Ben on Github">
-      <img class="gh" src="./images/gh.png" alt="" width="16" height="16" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Ben on GitHub</span>
     </a>
     <a href="https://twitter.com/benjaminbenben" class="📣" aria-label="Ben on Twitter">
-      <img src="./images/tw.png" alt="" width="16" height="16" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" width="16" height="16" />
       <span class="sr-only">Ben on twitter</span>
     </a>
 
   </li>
 
   <li>
-    <img src="images/RyanAlsoWithAHat-small.jpg" alt="Ryan Brooks, also wearing a hat">
+    <img src="{{ 'images/RyanAlsoWithAHat-small.jpg' | absolute_url }}" alt="Ryan Brooks, also wearing a hat">
     <span>Ryan Brooks</span>
     <a href="https://github.com/spikeheap/" class="📣" aria-label="Ryan on Github">
-      <img class="gh" src="./images/gh.png" alt="" />
+      <img class="gh" src="{{ 'images/gh.png' | absolute_url }}" alt="" />
       <span class="sr-only">Ryan on GitHub</span>
     </a>
     <a href="https://twitter.com/spikeheap" class="📣" aria-label="Ryan on Twitter">
-      <img src="./images/tw.png" alt="" />
+      <img src="{{ 'images/tw.png' | absolute_url }}" alt="" />
       <span class="sr-only">Ryan on twitter</span>
     </a>
   </li>
