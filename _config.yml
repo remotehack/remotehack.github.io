@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   that fully works (though if you wanna aim for that, that's cool too!)
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://remotehack.space" # the base hostname & protocol for your site, e.g. http://example.com
-
+discord_invite_url: https://discord.gg/wNq8uVvQT3
 
 
 

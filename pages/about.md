@@ -15,13 +15,13 @@ Even if you've never been to a hack day, or aren't tech-focused, you're absolute
 
 ### Beforehand
 
-→ Drop by [our Discord server](https://discord.gg/wNq8uVvQT3) and say hi.
+→ Drop by [our Discord server]({{ site.discord_invite_url }}) and say hi.
 
 → Browse some hack ideas on [GitHub](https://github.com/remotehack/remotehack.github.io/issues).
 
 ### 9.30am, Hello
 
-The day starts with a video call in discord. Join our remotehack server at [https://discord.gg/wNq8uVvQT3](https://discord.gg/wNq8uVvQT3).
+The day starts with a video call in discord. Join our remotehack server at [{{ site.discord_invite_url }}]({{ site.discord_invite_url }}).
 
 We'll have a very informal set of introductions, and discuss what people are interested in working on through the day.
 
