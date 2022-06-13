@@ -34,3 +34,4 @@ defaults:
     values:
       layout: "hack"
       show_title: false
+      upcoming: false

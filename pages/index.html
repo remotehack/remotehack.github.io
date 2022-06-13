@@ -10,7 +10,7 @@ permalink: /
 <section class="📅">
 
   <div>
-    {% assign sorted_hacks = site.hacks | where:"happened",false | sort:"date" | reverse %}
+    {% assign sorted_hacks = site.hacks | where:"upcoming",true | sort:"date" | reverse %}
     {% assign next_hack = sorted_hacks | first %}
     {% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
 
