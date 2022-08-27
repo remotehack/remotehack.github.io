@@ -1,0 +1,29 @@
+on:
+  schedule:
+    - cron: '30 0 1 * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    name: Add next file
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create file and push
+        run: |
+          next_hack_date=$(date -u +%Y-%m-$(ncal -h | awk '/Sa/ {print $(NF)}'))
+          last_hack_number=$(ls -1 _hacks | sort -r | head -n1 | sed 's/[^0-9]*//g')
+          next_hack_number=$(($last_hack_number+1))
+
+          cat << EOF > _hacks/$next_hack_number.md
+          ---
+          hack_number: $next_hack_number
+          date: $next_hack_date
+          upcoming: true
+          ---
+          EOF
+
+          git config --global user.email "date-bot@remotehack.com"
+          git config --global user.name "date-bot"
+          git add .
+          git commit -m "Add $next_hack_number on $next_hack_date"
+          git push origin main
