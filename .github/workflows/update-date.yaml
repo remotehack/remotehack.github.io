@@ -25,5 +25,5 @@ jobs:
           git config --global user.email "date-bot@remotehack.com"
           git config --global user.name "date-bot"
           git add .
-          git commit -m "Add $next_hack_number on $next_hack_date"
+          git commit -m "Add hack number $next_hack_number on $next_hack_date"
           git push origin main
