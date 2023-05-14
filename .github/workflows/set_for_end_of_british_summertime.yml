@@ -1,0 +1,20 @@
+on:
+    schedule:
+        # fire this at 8PM every year on October 31 (the day the clocks fall back at 2AM)
+        - cron: "0 20 31 10 *"
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        name: Turn off BST time adjustment
+        steps:
+            - uses: actions/checkout@v3
+            - name: Update to reflect end of British Summer time
+              run: |
+                  sed -i 's/T08:30Z/T09:30Z/g' pages/index.html
+
+                  git config --global user.email "date-bot@remotehack.com"
+                  git config --global user.name "date-bot"
+                  git add .
+                  git commit -m "update start time to reflect end of British Summer time"
+                  git push origin main
