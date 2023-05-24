@@ -1,0 +1,20 @@
+on:
+    schedule:
+        # fire this at 8PM every year on March 31 (the day the clocks spring forward at 1AM)
+        - cron: "0 20 31 3 *"
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        name: Turn on BST adjustment
+        steps:
+            - uses: actions/checkout@v3
+            - name: Update to reflect start of British Summer time
+              run: |
+                  sed -i 's/T09:30Z/T08:30Z/g' pages/index.html
+
+                  git config --global user.email "date-bot@remotehack.com"
+                  git config --global user.name "date-bot"
+                  git add .
+                  git commit -m "update start time to reflect start of British Summer time"
+                  git push origin main
