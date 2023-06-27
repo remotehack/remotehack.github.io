@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Create file and push
         run: |
+          apt update && apt install -y ncal
           next_hack_date=$(date -u +%Y-%m-$(ncal -h | awk '/Sa/ {print $(NF)}'))
           last_hack_number=$(ls -1 _hacks | sort -r | head -n1 | sed 's/[^0-9]*//g')
           next_hack_number=$(($last_hack_number+1))
