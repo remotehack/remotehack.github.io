@@ -5,7 +5,7 @@ permalink: /
 
 {% assign sorted_hacks = site.hacks | where:"upcoming",true | sort:"date" | reverse %}
 {% assign next_hack = sorted_hacks | first %}
-{% assign start_time = next_hack.date | slice:0,10 | append:"T08:30Z" %}
+{% assign start_time = next_hack.date | slice:0,10 | append:"T09:30Z" %}
 
 <p class="lead">
   An online event where you can meet friends and work on something new
