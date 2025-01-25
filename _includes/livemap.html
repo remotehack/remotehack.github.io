@@ -1,0 +1,84 @@
+<p id="map-text">
+  Loading...
+</p>
+<div id="map-container"></div>
+<div id="map-tooltip" class="tooltip"></div>
+
+<script type="module">
+  import * as d3 from "https://cdn.jsdelivr.net/npm/d3@v7/+esm";
+  import escape from "https://cdn.jsdelivr.net/npm/escape-html/+esm";
+
+  const container = document.getElementById("map-container");
+  const text = document.getElementById("map-text");
+  const tooltip = d3.select("#map-tooltip");
+
+  const width = 640;
+  const height = 400;
+
+  // create a new svg for d3.js to draw on
+  const svg = d3.create("svg").attr("width", width).attr("height", height);
+  container.append(svg.node());
+
+  // grab the data
+  Promise.all([
+    d3.json("http://localhost:8787/locations.geojson"),
+    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+  ]).then(([pointData, worldData]) => {
+    // update map text
+    text.innerText = `${pointData.features.length} hackers online!`;
+
+    // get the bounds of locations (min & max coordinates)
+    const bounds = d3.geoBounds(pointData);
+    const [[x0, y0], [x1, y1]] = bounds;
+
+    const dx = x1 - x0;
+    const dy = y1 - y0;
+    const x = ((x0 + x1) / 2) || 0;
+    const y = ((y0 + y1) / 2) || 0;
+
+    // calculate scale and translation based on the bounds
+    const scale = Math.max(10, Math.min(dx / width, dy / height)) * 100;
+    const translate = [width / 2 - scale * x, height / 2 - scale * y];
+    const padding = 100;
+
+    // create a new projection, centered at the middle of the locations
+    let projection = d3.geoNaturalEarth1()
+      .center([x, y])
+      .translate([width / 2, height / 2]);
+
+    // if there's more than 1 location, fit the map to show all locations nicely
+    if (pointData.features.length > 1) {
+      projection = projection.fitExtent([[0 + padding, 0 + padding], [width - padding, height - padding]], pointData);
+    }
+
+    // clamp the map scaling to 2000 so countries can be seen still
+    projection = projection.scale(Math.min(projection.scale(), 2000));
+
+    const pathGenerator = d3.geoPath(projection).pointRadius(4);
+
+    // draw countries
+    svg.append("path")
+      .datum(worldData)
+      .attr("d", pathGenerator)
+      .attr("fill", "#e6e7e8")
+      .attr("stroke", "white");
+
+    // draw points for each hacker location
+    svg.selectAll("circle")
+      .data(pointData.features)
+      .enter()
+      .append("circle")
+      .attr("cx", (d) => projection(d.geometry.coordinates)[0])
+      .attr("cy", (d) => projection(d.geometry.coordinates)[1])
+      .attr("r", 4)
+      .attr("fill", "blue")
+      .on("mouseover", (event, d) => {
+        tooltip.style("display", "block")
+          .html(`<b>${escape(d.properties.name || "Anonymous")}</b><br>${escape(d.properties.locationName)}`)
+          .style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 10) + "px");
+      }).on("mouseout", () => {
+        tooltip.style("display", "none");
+      });
+  });
+</script>
