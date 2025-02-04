@@ -3,6 +3,7 @@
 </p>
 <div id="map-container"></div>
 <div id="map-tooltip" class="tooltip"></div>
+<p>Join the Discord to add yourself to the map</p>
 
 <script type="module">
   import * as d3 from "https://cdn.jsdelivr.net/npm/d3@v7/+esm";
@@ -21,7 +22,7 @@
 
   // grab the data
   Promise.all([
-    d3.json("http://localhost:8787/locations.geojson"),
+    d3.json("{{ site.live_map_api }}/locations.geojson"),
     d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
   ]).then(([pointData, worldData]) => {
     // update map text
