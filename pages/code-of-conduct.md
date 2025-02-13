@@ -5,11 +5,11 @@ permalink: /code-of-conduct/
 
 For any issues/questions/queries, please contact an organiser:
 
-|             | Slack                                                  | Twitter                                                |
-| ----------- | ------------------------------------------------------ | ------------------------------------------------------ |
-| Adam Leskis | [Adam](https://remote-hack.slack.com/team/U010R59RE4D) | [@BaronVonLeskis](https://twitter.com/@BaronVonLeskis) |
-| Ben Foxall  | [Ben](https://remote-hack.slack.com/team/U010PB5GB4N)  | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
-| Ryan Brooks | [Ryan](https://remote-hack.slack.com/team/U010MNGLJ1K) | [@spikeheap](https://twitter.com/@spikeheap)           |
+|             | GitHub                                      | Twitter                                                |
+| ----------- | ------------------------------------------- | ------------------------------------------------------ |
+| Adam Leskis | [lpmi-13](https://github.com/lpmi-13)       | [@BaronVonLeskis](https://twitter.com/@BaronVonLeskis) |
+| Ben Foxall  | [benfoxall](https://github.com/benfoxall)   | [@benjaminbenben](https://twitter.com/@benjaminbenben) |
+| Ryan Brooks | [Ryan](https://github.com/spikeheap)        | [@spikeheap](https://twitter.com/@spikeheap)           |
 
 # {{ page.title }}
 
