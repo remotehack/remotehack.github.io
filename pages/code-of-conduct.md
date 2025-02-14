@@ -5,11 +5,11 @@ permalink: /code-of-conduct/
 
 For any issues/questions/queries, please contact an organiser:
 
-|             | GitHub                                      | Social                                                                   |
-| ----------- | ------------------------------------------- | ------------------------------------------------------------------------ |
-| Adam Leskis | [lpmi-13](https://github.com/lpmi-13)       | [@BaronVonLeskis](https://twitter.com/@BaronVonLeskis)                   |
-| Ben Foxall  | [benfoxall](https://github.com/benfoxall)   | [@benfoxall.bsky.social](https://bsky.app/profile/benfoxall.bsky.social) |
-| Ryan Brooks | [Ryan](https://github.com/spikeheap)        | [@spikeheap](https://twitter.com/@spikeheap)                             |
+|             | GitHub                                           | Social                                                                   |
+| ----------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
+| Adam Leskis | [lpmi-13](https://github.com/lpmi-13)            | [@BaronVonLeskis](https://twitter.com/@BaronVonLeskis)                   |
+| Ben Foxall  | [benfoxall](https://github.com/benfoxall)        | [@benfoxall.bsky.social](https://bsky.app/profile/benfoxall.bsky.social) |
+| Ryan Brooks | [spikeheap](https://github.com/spikeheap)        | [@spikeheap](https://twitter.com/@spikeheap)                             |
 
 # {{ page.title }}
 
