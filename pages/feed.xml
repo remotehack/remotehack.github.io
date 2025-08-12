@@ -16,7 +16,7 @@ permalink: /feed.xml
         | date_to_rfc822 }}</pubDate>
         <ttl>60</ttl> {% assign sorted_hacks = site.hacks |
         where:"upcoming",false | sort:"date" | reverse %} {% for hack in sorted_hacks %} <item>
-            <title>{{ hack.title }}</title>
+            <title>{{ hack.date | date: '%B %Y' }}</title>
             <description>{{ hack.content | xml_escape }}</description>
             <link>{{ site.url }}{{ hack.url }}</link>
             <guid isPermaLink="true">{{ site.url }}{{ hack.url }}</guid>
