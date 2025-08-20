@@ -353,3 +353,11 @@ ol {
 		}
 	}
 }
+
+.tooltip {
+	position: absolute;
+	background: var(--background-light);
+	color: var(--foreground);
+	padding: 5px;
+	display: none;
+}
