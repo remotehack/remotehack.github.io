@@ -166,7 +166,7 @@
     try {
       summarizerInstance = await Summarizer.create({
         sharedContext: sharedContext,
-        type: 'tl;dr',
+        type: 'tldr',
         length: 'short',
         format: 'plain-text',
         outputLanguage: 'en'
