@@ -5,6 +5,7 @@
   --background-light: #e6e7e8;
   --foreground: #000;
   --foreground-light: #fff;
+  --foreground-muted: #666;
   --link: blue;
   --filter: invert(0);
 }
@@ -107,6 +108,20 @@ ol {
       margin: 0.5em;
     }
   }
+}
+.hack-tagline {
+	display: block;
+	min-height: 1.5em;
+	font-size: 1rem;
+	color: var(--foreground-muted);
+	font-style: italic;
+	margin-top: 0.25em;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+
+	&--loaded {
+		opacity: 1;
+	}
 }
 .⏹ {
 	display: flex;
