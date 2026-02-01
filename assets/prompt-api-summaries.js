@@ -168,7 +168,8 @@
         sharedContext: sharedContext,
         type: 'tl;dr',
         length: 'short',
-        format: 'plain-text'
+        format: 'plain-text',
+        outputLanguage: 'en'
       });
       return summarizerInstance;
     } catch (error) {
