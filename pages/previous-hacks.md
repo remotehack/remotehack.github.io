@@ -17,6 +17,9 @@ Here are links to write-ups of our previous hack days!
         - {{hack.event_name}}
         {% endif %}
       </a>
+      <span class="hack-tagline"></span>
     </li>
   {% endfor %}
 </ol>
+
+<script src="/assets/prompt-api-summaries.js"></script>

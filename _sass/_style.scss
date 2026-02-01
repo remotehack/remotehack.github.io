@@ -108,6 +108,20 @@ ol {
     }
   }
 }
+.hack-tagline {
+	display: block;
+	min-height: 1.5em;
+	font-size: 1rem;
+	color: #666;
+	font-style: italic;
+	margin-top: 0.25em;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+
+	&--loaded {
+		opacity: 1;
+	}
+}
 .⏹ {
 	display: flex;
 	align-items: center;
