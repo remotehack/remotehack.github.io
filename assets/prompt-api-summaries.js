@@ -5,7 +5,7 @@
  * for each hack day entry on the Previous Hacks page.
  * 
  * Summarizer API docs: https://developer.chrome.com/docs/ai/summarizer-api
- * MDN: https://developer.mozilla.org/en-US/docs/Web/API/Summarizer
+ * MDN: https://developer.mozilla.org/en-US/docs/Web/API/Summarizer_API/Using
  * 
  * Summaries are cached in IndexedDB using a hash of content + context
  * to avoid regenerating unchanged content.
@@ -25,7 +25,7 @@
   // Store parsed feed items for reuse
   let feedItems = null;
   // Store the summarizer instance
-  let summarizer = null;
+  let summarizerInstance = null;
   // Store the IndexedDB instance
   let db = null;
 
@@ -133,18 +133,19 @@
    * @returns {Promise<boolean>}
    */
   async function isSummarizerAvailable() {
-    if (!('ai' in self) || !('summarizer' in self.ai)) {
-      console.info('[Summarizer] Not available: ai.summarizer not found in window');
+    // Check for global Summarizer constructor (new API)
+    if (typeof Summarizer === 'undefined') {
+      console.info('[Summarizer] Not available: Summarizer constructor not found');
       return false;
     }
 
     try {
-      const capabilities = await self.ai.summarizer.capabilities();
-      if (capabilities.available === 'no') {
-        console.info('[Summarizer] Not available: capabilities.available is "no"');
+      const availability = await Summarizer.availability();
+      if (availability === 'unavailable') {
+        console.info('[Summarizer] Not available: availability is "unavailable"');
         return false;
       }
-      console.info('[Summarizer] Available with capabilities:', capabilities);
+      console.info('[Summarizer] Available with availability:', availability);
       return true;
     } catch (error) {
       console.info('[Summarizer] Not available due to error:', error.message);
@@ -158,18 +159,18 @@
    * @returns {Promise<Object|null>}
    */
   async function getSummarizer(sharedContext) {
-    if (summarizer) {
-      return summarizer;
+    if (summarizerInstance) {
+      return summarizerInstance;
     }
 
     try {
-      summarizer = await self.ai.summarizer.create({
+      summarizerInstance = await Summarizer.create({
         sharedContext: sharedContext,
         type: 'tl;dr',
         length: 'short',
         format: 'plain-text'
       });
-      return summarizer;
+      return summarizerInstance;
     } catch (error) {
       console.error('[Summarizer] Failed to create summarizer:', error.message);
       return null;
@@ -264,45 +265,64 @@
   }
 
   /**
+   * Generate a summary for content using the Summarizer API
+   * @param {string} content - Content to summarize
+   * @param {string} context - Context for summarization
+   * @param {boolean} useCache - Whether to use caching (default: true)
+   * @returns {Promise<string>}
+   */
+  async function generateSummaryForContent(content, context, useCache = true) {
+    // Skip if there's no real content
+    if (!content || content.length < 20) {
+      return '';
+    }
+
+    // Create cache key from content + context
+    const cacheKey = await hashString(content + context);
+    
+    // Check cache first (if enabled)
+    if (useCache) {
+      const cached = await getCachedSummary(cacheKey);
+      if (cached) {
+        console.info('[Summarizer] Using cached summary');
+        return cached;
+      }
+    }
+
+    const summarizer = await getSummarizer(context);
+    if (!summarizer) {
+      return '';
+    }
+
+    try {
+      const result = await summarizer.summarize(content);
+      const summary = result.trim();
+      
+      // Cache the result
+      if (useCache) {
+        await cacheSummary(cacheKey, summary);
+      }
+      
+      return summary;
+    } catch (error) {
+      console.warn('[Summarizer] Failed to generate summary:', error.message);
+      return '';
+    }
+  }
+
+  /**
    * Generate a summary for a hack day using the Summarizer API
    * @param {Object} item - Feed item with title, url, description
    * @param {string} context - Context for summarization
    * @returns {Promise<string>}
    */
   async function generateSummary(item, context) {
-    // Skip if there's no real content
-    if (!item.description || item.description.length < 20) {
-      return '';
+    const content = `Hack day: ${item.title}\n\n${item.description}`;
+    const summary = await generateSummaryForContent(content, context);
+    if (summary) {
+      console.info('[Summarizer] Generated summary for', item.title);
     }
-
-    // Create cache key from content + context
-    const cacheKey = await hashString(item.description + context);
-    
-    // Check cache first
-    const cached = await getCachedSummary(cacheKey);
-    if (cached) {
-      console.info('[Summarizer] Using cached summary for', item.title);
-      return cached;
-    }
-
-    const summarizerInstance = await getSummarizer(context);
-    if (!summarizerInstance) {
-      return '';
-    }
-
-    try {
-      const content = `Hack day: ${item.title}\n\n${item.description}`;
-      const result = await summarizerInstance.summarize(content);
-      const summary = result.trim();
-      
-      // Cache the result
-      await cacheSummary(cacheKey, summary);
-      
-      return summary;
-    } catch (error) {
-      console.warn('[Summarizer] Failed to generate summary for', item.title, ':', error.message);
-      return '';
-    }
+    return summary;
   }
 
   /**
@@ -393,13 +413,13 @@
     });
 
     // Destroy existing summarizer to get fresh results with new context
-    if (summarizer) {
+    if (summarizerInstance) {
       try {
-        summarizer.destroy();
+        summarizerInstance.destroy();
       } catch (e) {
         // Ignore errors on destroy
       }
-      summarizer = null;
+      summarizerInstance = null;
     }
 
     await updateTaglines(context);
@@ -414,6 +434,67 @@
    * clearHackSummaryCache()
    */
   window.clearHackSummaryCache = clearCache;
+
+  /**
+   * Test function to generate summaries without DOM changes
+   * Useful for testing the Summarizer API in Chrome DevTools
+   * 
+   * @param {number} count - Number of summaries to generate (default: 3)
+   * @param {string} context - Custom context for summarization
+   * @example
+   * // From browser console:
+   * testSummarizer()
+   * testSummarizer(5)
+   * testSummarizer(2, "What projects did people work on?")
+   */
+  window.testSummarizer = async function(count = 3, context = DEFAULT_CONTEXT) {
+    console.info('[Summarizer] Testing Summarizer API...');
+    
+    // Check availability
+    const available = await isSummarizerAvailable();
+    if (!available) {
+      console.error('[Summarizer] API not available - cannot run test');
+      return;
+    }
+
+    // Load feed
+    const items = await loadFeed();
+    if (items.length === 0) {
+      console.error('[Summarizer] No feed items available for testing');
+      return;
+    }
+
+    // Filter items with content
+    const itemsWithContent = items.filter(item => item.description && item.description.length >= 20);
+    const testItems = itemsWithContent.slice(0, count);
+
+    console.info(`[Summarizer] Generating ${testItems.length} test summaries with context: "${context}"`);
+    console.info('---');
+
+    for (const item of testItems) {
+      console.info(`Processing: ${item.title}`);
+      const startTime = performance.now();
+      
+      // Generate summary without caching for testing
+      const summary = await generateSummaryForContent(
+        `Hack day: ${item.title}\n\n${item.description}`,
+        context,
+        false // Skip cache for testing
+      );
+      
+      const elapsed = Math.round(performance.now() - startTime);
+      
+      if (summary) {
+        console.info(`✓ ${item.title} (${elapsed}ms):`);
+        console.info(`  "${summary}"`);
+      } else {
+        console.warn(`✗ ${item.title}: Failed to generate summary`);
+      }
+      console.info('---');
+    }
+
+    console.info('[Summarizer] Test complete');
+  };
 
   // Run on page load
   if (document.readyState === 'loading') {
