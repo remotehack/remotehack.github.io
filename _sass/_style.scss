@@ -5,6 +5,7 @@
   --background-light: #e6e7e8;
   --foreground: #000;
   --foreground-light: #fff;
+  --foreground-muted: #666;
   --link: blue;
   --filter: invert(0);
 }
@@ -112,7 +113,7 @@ ol {
 	display: block;
 	min-height: 1.5em;
 	font-size: 1rem;
-	color: #666;
+	color: var(--foreground-muted);
 	font-style: italic;
 	margin-top: 0.25em;
 	opacity: 0;

@@ -11,6 +11,9 @@
 (function() {
   'use strict';
 
+  // Default prompt for generating summaries
+  const DEFAULT_PROMPT = 'Write a short, witty one-sentence summary of this hack day (max 10 words):';
+
   // Store parsed feed items for reuse
   let feedItems = null;
   // Store the language model session
@@ -126,18 +129,27 @@ Don't use emojis. Don't start with "A" or "The".`
    * @returns {HTMLElement|null}
    */
   function findTaglineElement(url) {
-    // Extract the path from the URL (e.g., "/hacks/50/" from "https://remotehack.space/hacks/50/")
-    const urlPath = new URL(url).pathname;
-    
-    // Find the link that matches this path
-    const links = document.querySelectorAll('.past-events a');
-    for (const link of links) {
-      const linkPath = new URL(link.href).pathname;
-      if (linkPath === urlPath) {
-        // Find the tagline element within the same list item
-        const li = link.closest('li');
-        return li?.querySelector('.hack-tagline');
+    // Validate URL before processing
+    if (!url || typeof url !== 'string') {
+      return null;
+    }
+
+    try {
+      // Extract the path from the URL (e.g., "/hacks/50/" from "https://remotehack.space/hacks/50/")
+      const urlPath = new URL(url).pathname;
+      
+      // Find the link that matches this path
+      const links = document.querySelectorAll('.past-events a');
+      for (const link of links) {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === urlPath) {
+          // Find the tagline element within the same list item
+          const li = link.closest('li');
+          return li?.querySelector('.hack-tagline');
+        }
       }
+    } catch (error) {
+      console.warn('[Prompt API] Invalid URL in feed item:', url);
     }
     return null;
   }
@@ -177,7 +189,7 @@ Content: ${item.description}`;
    * Update all taglines on the page with generated summaries
    * @param {string} prompt - The prompt to use for generation
    */
-  async function updateTaglines(prompt = 'Write a short, witty one-sentence summary of this hack day (max 10 words):') {
+  async function updateTaglines(prompt = DEFAULT_PROMPT) {
     const available = await isPromptAPIAvailable();
     if (!available) {
       console.info('[Prompt API] Skipping tagline updates - API not available');
