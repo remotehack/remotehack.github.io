@@ -27,4 +27,4 @@ _Or_, subscribe on Spotify:
 
 You can hear the latest published episode here: 
 
-<iframe src="https://open.spotify.com/embed-podcast/show/2ppoyoTxxSv9IvRGGqLWP7" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" title="Spotify Podcast player - Airquotes the Podcast Airquotes"></iframe>
+<iframe src="https://open.spotify.com/embed-podcast/show/2ppoyoTxxSv9IvRGGqLWP7" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" title="Spotify Podcast player - Airquotes the Podcast Airquotes" sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
