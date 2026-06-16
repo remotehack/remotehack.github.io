@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.bunny.net; font-src https://fonts.bunny.net; img-src 'self' data:; frame-src https://open.spotify.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400&display=swap"
+  <link href="https://fonts.bunny.net/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
 
@@ -63,9 +65,8 @@
     {% endunless %}
   </nav>
 
-  <script>
-    for (const a of document.querySelectorAll('.🗺 a')) if (location.href === a.href) a.classList.add('current')
-  </script>
+  <script src="/assets/nav-current.js" defer></script>
+  <script src="/assets/local-time.js" defer></script>
 
 
   {% if page.show_header %}
@@ -90,10 +91,10 @@
     <footer>
       <ul class="🔗">
         <li>
-          Header image – <a href="https://back7.co/home/raspberry-pi-recovery-kit">The Raspberry Pi Recovery Kit</a>
+          Header image – <a href="https://back7.co/home/raspberry-pi-recovery-kit" rel="noopener noreferrer">The Raspberry Pi Recovery Kit</a>
         </li>
         <li>
-          Site hosted with <a href="https://github.com">Github</a>. {% if site.github %}View the <a href="{{ site.github.repository_url }}">source repository</a>.{% endif %}
+          Site hosted with <a href="https://github.com" rel="noopener noreferrer">Github</a>. {% if site.github %}View the <a href="{{ site.github.repository_url }}" rel="noopener noreferrer">source repository</a>.{% endif %}
         </li>
       </ul>
     </footer>
