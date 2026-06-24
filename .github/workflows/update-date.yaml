@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Add next file
     steps:
-      - uses: actions/checkout@v3
+      # actions/checkout@v7.0.0
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
       - name: Create file and push
         run: |
           sudo apt update && sudo apt install -y ncal
