@@ -8,7 +8,8 @@ jobs:
         runs-on: ubuntu-latest
         name: Turn off BST time adjustment
         steps:
-            - uses: actions/checkout@v3
+            # actions/checkout@v7.0.0
+            - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
             - name: Update to reflect end of British Summer time
               run: |
                   sed -i 's/T08:30Z/T09:30Z/g' pages/index.html
