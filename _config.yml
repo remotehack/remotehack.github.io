@@ -6,14 +6,13 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://remotehack.space" # the base hostname & protocol for your site, e.g. http://example.com
 discord_invite_url: https://discord.gg/wNq8uVvQT3
-
-
+live_map_api: https://remotehack-livemap-api.jakew.workers.dev
 
 # Build settings
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
-  
+
 timezone: Europe/London
 
 # To ensure that events in the future generate their html pages
