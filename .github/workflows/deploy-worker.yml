@@ -1,0 +1,31 @@
+name: Deploy Cloudflare Worker (security headers)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "cloudflare/**"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy worker
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: cloudflare
+
+    steps:
+      # actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      # cloudflare/wrangler-action@v3
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: cloudflare

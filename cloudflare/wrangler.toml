@@ -1,0 +1,14 @@
+name = "remotehack-security-headers"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# The worker runs on the remotehack.space zone, intercepting every request
+# so it can attach security headers to every response before it reaches
+# the visitor's browser.
+#
+# account_id is supplied via the CLOUDFLARE_ACCOUNT_ID environment variable
+# in the GitHub Actions deployment workflow – do not hard-code it here.
+
+[[routes]]
+pattern = "remotehack.space/*"
+zone_name = "remotehack.space"
