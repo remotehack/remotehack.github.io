@@ -12,6 +12,8 @@ jobs:
   deploy:
     name: Deploy worker
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     defaults:
       run:
         working-directory: cloudflare
