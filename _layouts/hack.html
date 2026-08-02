@@ -11,7 +11,7 @@ layout: default
 {% if pagesize < 2 %}
   {%- capture content -%}
   {% assign start_time = page.date | slice:0,10 | append:"T08:30Z" %}
-  This hack is happening on <time style="font-weight: bold;" datetime="{{start_time}}">{{ start_time| date_to_long_string }}<span class="local-time">
+  This hack is happening on <time class="hack-time" datetime="{{start_time}}">{{ start_time| date_to_long_string }}<span class="local-time">
     <noscript>
       {{ start_time | date: "%k:%M%P %Z" }}
     </noscript>
