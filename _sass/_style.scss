@@ -28,7 +28,7 @@
 }
 
 body {
-	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-family: "Inter", monospace;
 	background: var(--background);
 	color: var(--foreground);
 }
@@ -43,37 +43,37 @@ a {
 	color: var(--link);
 }
 h1 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
 }
 h2 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
 }
 h3 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
 }
 h4 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
 }
 h5 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
 }
 h6 {
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding-top: 0.5em;
 	font-weight: 400;
 	text-decoration: underline;
@@ -162,7 +162,7 @@ ol {
 	margin: 3em auto;
 	display: flex;
 	flex-wrap: wrap;
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 
 	a {
 		margin-right: 1em;
@@ -207,7 +207,7 @@ ol {
 		color: var(--link);
 		cursor: pointer;
 		font-size: 1.5em;
-		font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		font-family: "Space Mono", serif;
 
 		&:hover {
 			background: var(--background-light);
@@ -226,7 +226,7 @@ ol {
 	display: block;
 	margin: 0;
 	font-size: 1.5rem;
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 }
 .🐙 {
 	text-align: right;
@@ -248,7 +248,7 @@ ol {
 	grid-template-columns: repeat(2, 1fr);
 	list-style: none;
 	gap: 0.5em;
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 	padding: 0;
 
 	li {
@@ -294,7 +294,7 @@ ol {
 .🖱️ {
 	font-size: 1.5em;
 	display: block;
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 
 	a {
 		display: flex;
@@ -318,7 +318,7 @@ ol {
 	padding-top: 1em;
 	margin-top: 3em;
 	padding: 0;
-	font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Space Mono", serif;
 
 	li {
 		list-style: none;
@@ -329,7 +329,7 @@ ol {
 	text-align: center;
 	margin-top: 3em;
 	font-size: 1.5rem;
-  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Space Mono", serif;
 
 	* {
     font-family: inherit;
